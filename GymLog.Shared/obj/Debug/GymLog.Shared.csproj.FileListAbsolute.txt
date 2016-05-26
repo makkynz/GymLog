@@ -1,0 +1,7 @@
+C:\work\GymLog\GymLog\GymLog.Shared\bin\Debug\GymLog.Shared.dll
+C:\work\GymLog\GymLog\GymLog.Shared\bin\Debug\GymLog.Shared.pdb
+C:\work\GymLog\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.csprojResolveAssemblyReference.cache
+C:\work\GymLog\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.dll
+C:\work\GymLog\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.pdb
+C:\work\GymLog\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.dll.mdb
+C:\work\GymLog\GymLog\GymLog.Shared\bin\Debug\GymLog.Shared.dll.mdb
