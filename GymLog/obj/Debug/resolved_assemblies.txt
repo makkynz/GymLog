@@ -6,7 +6,9 @@ C:\work\GymLog\GymLog\obj\Debug\assemblies\System.Core.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\System.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\System.Xml.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\System.Xml.Linq.dll
+C:\work\GymLog\GymLog\obj\Debug\assemblies\Xamarin.Android.Support.Design.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\Xamarin.Android.Support.v4.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\Xamarin.Android.Support.v7.AppCompat.dll
+C:\work\GymLog\GymLog\obj\Debug\assemblies\Xamarin.Android.Support.v7.RecyclerView.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\System.Runtime.Serialization.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\System.ServiceModel.Internals.dll

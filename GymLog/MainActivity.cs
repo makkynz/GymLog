@@ -13,7 +13,7 @@ using Android.Support.V7.App;
 namespace GymLog
 {
     [Activity(Label = "GymLog", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/MyTheme")]
-    public class MainActivity : ActionBarActivity
+    public class MainActivity : AppCompatActivity
     {
 
         private Android.Support.V7.Widget.Toolbar _toolbar;

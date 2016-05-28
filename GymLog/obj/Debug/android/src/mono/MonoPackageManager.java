@@ -81,8 +81,10 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"GymLog.dll",
 		"GymLog.Shared.dll",
+		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.AppCompat.dll",
+		"Xamarin.Android.Support.v7.RecyclerView.dll",
 		"System.ServiceModel.Internals.dll",
 	};
 	public static final String[] Dependencies = new String[]{

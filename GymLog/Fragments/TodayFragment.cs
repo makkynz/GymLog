@@ -14,6 +14,7 @@ using Android.Support.V4.View;
 using Android.Support.V4.App;
 using lm = GymLog.Shared.Manager.LogManager;
 using GymLog.Adapters;
+using Android.Support.Design.Widget;
 
 namespace GymLog.Fragments
 {
@@ -36,6 +37,15 @@ namespace GymLog.Fragments
         {
             var lv = view.FindViewById<ListView>(Resource.Id.listViewExercises);
             lv.Adapter = new ExerciseListViewAdapter(base.Activity, lm.LogsToday);
+
+            var fab = view.FindViewById<FloatingActionButton>(Resource.Id.fab);
+
+            //Floating action button
+            fab.Click += (sender, args) =>
+            {
+                var intent = new Intent(base.Activity, typeof(AddExercise));
+                StartActivity(intent);
+            };
 
         }
 
