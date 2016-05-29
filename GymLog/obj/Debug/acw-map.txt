@@ -1,3 +1,7 @@
+GymLog.Fragments.ExerciseListFragment, GymLog;md5eb50f95c253920b1c37d85c993565753.ExerciseListFragment
+GymLog.Fragments.ExerciseListFragment, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5eb50f95c253920b1c37d85c993565753.ExerciseListFragment
+GymLog.Fragments.ExerciseListFragment;md5eb50f95c253920b1c37d85c993565753.ExerciseListFragment
+gymlog.fragments.ExerciseListFragment;md5eb50f95c253920b1c37d85c993565753.ExerciseListFragment
 GymLog.Fragments.HistoryFragment, GymLog;md5eb50f95c253920b1c37d85c993565753.HistoryFragment
 GymLog.Fragments.HistoryFragment, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5eb50f95c253920b1c37d85c993565753.HistoryFragment
 GymLog.Fragments.HistoryFragment;md5eb50f95c253920b1c37d85c993565753.HistoryFragment

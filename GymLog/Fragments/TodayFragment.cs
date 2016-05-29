@@ -35,12 +35,15 @@ namespace GymLog.Fragments
 
         public override void OnViewCreated(View view, Bundle savedInstanceState)
         {
-            var lv = view.FindViewById<ListView>(Resource.Id.listViewExercises);
-            lv.Adapter = new ExercisesAdapter(base.Activity, lm.LogsToday);
 
-            var fab = view.FindViewById<FloatingActionButton>(Resource.Id.fab);
+            //bind Exercies list
+            var exerciseList = new ExerciseListFragment(lm.LogsToday);
+            var trans = ChildFragmentManager.BeginTransaction();
+            trans.Add(Resource.Id.frameLayoutExercises, exerciseList).Commit();           
 
-            //Floating action button
+
+            /*bind Plus button*/
+            var fab = view.FindViewById<FloatingActionButton>(Resource.Id.fab);            
             fab.Click += (sender, args) =>
             {
                 var intent = new Intent(base.Activity, typeof(Activities.AddExercise));

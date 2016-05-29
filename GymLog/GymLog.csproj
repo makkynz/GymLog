@@ -68,6 +68,7 @@
     <Compile Include="Adapters\ExercisesAdapter.cs" />
     <Compile Include="Adapters\HomePagerAdapter.cs" />
     <Compile Include="Activities\AddExercise.cs" />
+    <Compile Include="Fragments\ExerciseListFragment.cs" />
     <Compile Include="Fragments\HistoryFragment.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -88,6 +89,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AddExerciseActivity.axml" />
+    <AndroidResource Include="Resources\layout\ExerciseList.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />

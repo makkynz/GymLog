@@ -48,5 +48,6 @@ C:\work\GymLog\GymLog\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
 C:\work\GymLog\GymLog\bin\Debug\GymLog.Shared.dll.mdb
 C:\work\GymLog\GymLog\obj\Debug\res\layout\addexerciseactivity.xml
 C:\work\GymLog\GymLog\obj\Debug\res\layout\exerciserow.xml
+C:\work\GymLog\GymLog\obj\Debug\res\layout\exerciselist.xml
 C:\work\GymLog\GymLog\obj\Debug\GymLog.dll.mdb
 C:\work\GymLog\GymLog\bin\Debug\GymLog.dll.mdb

@@ -34,8 +34,10 @@ namespace GymLog.Fragments
 
         public override void OnViewCreated(View view, Bundle savedInstanceState)
         {
-            var lv = view.FindViewById<ListView>(Resource.Id.listViewExercises);
-            lv.Adapter = new ExercisesAdapter(base.Activity, lm.LogsToday);
+            //bind Exercies list (nested fragment)
+            var exerciseList = new ExerciseListFragment(lm.LogsToday);
+            var trans = ChildFragmentManager.BeginTransaction();
+            trans.Add(Resource.Id.linearLayoutExercises, exerciseList).Commit();           
 
 
         }    
