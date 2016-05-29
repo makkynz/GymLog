@@ -36,14 +36,14 @@ namespace GymLog.Fragments
         public override void OnViewCreated(View view, Bundle savedInstanceState)
         {
             var lv = view.FindViewById<ListView>(Resource.Id.listViewExercises);
-            lv.Adapter = new ExerciseListViewAdapter(base.Activity, lm.LogsToday);
+            lv.Adapter = new ExercisesAdapter(base.Activity, lm.LogsToday);
 
             var fab = view.FindViewById<FloatingActionButton>(Resource.Id.fab);
 
             //Floating action button
             fab.Click += (sender, args) =>
             {
-                var intent = new Intent(base.Activity, typeof(AddExercise));
+                var intent = new Intent(base.Activity, typeof(Activities.AddExercise));
                 StartActivity(intent);
             };
 

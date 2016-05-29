@@ -1966,8 +1966,8 @@ namespace GymLog
 			// aapt resource value: 0x7f06000b
 			public const int listMode = 2131099659;
 			
-			// aapt resource value: 0x7f060072
-			public const int listViewExercises = 2131099762;
+			// aapt resource value: 0x7f060074
+			public const int listViewExercises = 2131099764;
 			
 			// aapt resource value: 0x7f060041
 			public const int list_item = 2131099713;
@@ -2149,11 +2149,11 @@ namespace GymLog
 			// aapt resource value: 0x7f060047
 			public const int topPanel = 2131099719;
 			
-			// aapt resource value: 0x7f060073
-			public const int tvName = 2131099763;
+			// aapt resource value: 0x7f060072
+			public const int tvName = 2131099762;
 			
-			// aapt resource value: 0x7f060074
-			public const int tvSets = 2131099764;
+			// aapt resource value: 0x7f060073
+			public const int tvSets = 2131099763;
 			
 			// aapt resource value: 0x7f060009
 			public const int up = 2131099657;
@@ -2329,10 +2329,10 @@ namespace GymLog
 			public const int design_navigation_menu_item = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int HistoryFragement = 2130903077;
+			public const int ExerciseRow = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int listview_exercise_row = 2130903078;
+			public const int HistoryFragement = 2130903078;
 			
 			// aapt resource value: 0x7f030027
 			public const int Main = 2130903079;

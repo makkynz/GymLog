@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px"
-    android:background="#45B7BD">
+    android:minHeight="25px">
     <TextView
         android:text="History"
         android:textAppearance="?android:attr/textAppearanceLarge"

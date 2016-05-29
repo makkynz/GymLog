@@ -30,7 +30,6 @@ C:\work\GymLog\GymLog\obj\Debug\GymLog.dll
 C:\work\GymLog\GymLog\obj\Debug\GymLog.pdb
 C:\work\GymLog\GymLog\obj\Debug\android\bin\GymLog.GymLog.apk
 C:\work\GymLog\GymLog\obj\Debug\res\layout\todayfragement.xml
-C:\work\GymLog\GymLog\obj\Debug\res\layout\listview_exercise_row.xml
 C:\work\GymLog\GymLog\obj\Debug\res\layout\historyfragement.xml
 C:\work\GymLog\GymLog\obj\Debug\res\layout\main.xml
 C:\work\GymLog\GymLog\obj\Debug\res\values\strings.xml
@@ -48,5 +47,6 @@ C:\work\GymLog\GymLog\bin\Debug\Xamarin.Android.Support.Design.dll
 C:\work\GymLog\GymLog\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
 C:\work\GymLog\GymLog\bin\Debug\GymLog.Shared.dll.mdb
 C:\work\GymLog\GymLog\obj\Debug\res\layout\addexerciseactivity.xml
+C:\work\GymLog\GymLog\obj\Debug\res\layout\exerciserow.xml
 C:\work\GymLog\GymLog\obj\Debug\GymLog.dll.mdb
 C:\work\GymLog\GymLog\bin\Debug\GymLog.dll.mdb

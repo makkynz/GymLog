@@ -2263,7 +2263,7 @@ containing a value of this type.
         public static final int line1=0x7f06007c;
         public static final int line3=0x7f060080;
         public static final int listMode=0x7f06000b;
-        public static final int listViewExercises=0x7f060072;
+        public static final int listViewExercises=0x7f060074;
         public static final int list_item=0x7f060041;
         public static final int mainLayout=0x7f060069;
         public static final int media_actions=0x7f06007a;
@@ -2324,8 +2324,8 @@ containing a value of this type.
         public static final int toolbar=0x7f060075;
         public static final int top=0x7f060032;
         public static final int topPanel=0x7f060047;
-        public static final int tvName=0x7f060073;
-        public static final int tvSets=0x7f060074;
+        public static final int tvName=0x7f060072;
+        public static final int tvSets=0x7f060073;
         public static final int up=0x7f060009;
         public static final int useLogo=0x7f060014;
         public static final int viewPager=0x7f060076;
@@ -2379,8 +2379,8 @@ containing a value of this type.
         public static final int design_navigation_item_subheader=0x7f030022;
         public static final int design_navigation_menu=0x7f030023;
         public static final int design_navigation_menu_item=0x7f030024;
-        public static final int historyfragement=0x7f030025;
-        public static final int listview_exercise_row=0x7f030026;
+        public static final int exerciserow=0x7f030025;
+        public static final int historyfragement=0x7f030026;
         public static final int main=0x7f030027;
         public static final int notification_media_action=0x7f030028;
         public static final int notification_media_cancel_action=0x7f030029;

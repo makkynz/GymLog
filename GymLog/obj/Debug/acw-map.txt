@@ -1,11 +1,3 @@
-GymLog.AddExercise, GymLog;md5a274b079c26abc6016b0356a7d205c7c.AddExercise
-GymLog.AddExercise, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a274b079c26abc6016b0356a7d205c7c.AddExercise
-GymLog.AddExercise;md5a274b079c26abc6016b0356a7d205c7c.AddExercise
-gymlog.AddExercise;md5a274b079c26abc6016b0356a7d205c7c.AddExercise
-GymLog.MainActivity, GymLog;md5a274b079c26abc6016b0356a7d205c7c.MainActivity
-GymLog.MainActivity, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a274b079c26abc6016b0356a7d205c7c.MainActivity
-GymLog.MainActivity;md5a274b079c26abc6016b0356a7d205c7c.MainActivity
-gymlog.MainActivity;md5a274b079c26abc6016b0356a7d205c7c.MainActivity
 GymLog.Fragments.HistoryFragment, GymLog;md5eb50f95c253920b1c37d85c993565753.HistoryFragment
 GymLog.Fragments.HistoryFragment, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5eb50f95c253920b1c37d85c993565753.HistoryFragment
 GymLog.Fragments.HistoryFragment;md5eb50f95c253920b1c37d85c993565753.HistoryFragment
@@ -14,10 +6,18 @@ GymLog.Fragments.TodayFragment, GymLog;md5eb50f95c253920b1c37d85c993565753.Today
 GymLog.Fragments.TodayFragment, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5eb50f95c253920b1c37d85c993565753.TodayFragment
 GymLog.Fragments.TodayFragment;md5eb50f95c253920b1c37d85c993565753.TodayFragment
 gymlog.fragments.TodayFragment;md5eb50f95c253920b1c37d85c993565753.TodayFragment
-GymLog.Adapters.ExerciseListViewAdapter, GymLog;md559d1f1c68d0ba55b6e42580d93bd9e8d.ExerciseListViewAdapter
-GymLog.Adapters.ExerciseListViewAdapter, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md559d1f1c68d0ba55b6e42580d93bd9e8d.ExerciseListViewAdapter
-GymLog.Adapters.ExerciseListViewAdapter;md559d1f1c68d0ba55b6e42580d93bd9e8d.ExerciseListViewAdapter
-gymlog.adapters.ExerciseListViewAdapter;md559d1f1c68d0ba55b6e42580d93bd9e8d.ExerciseListViewAdapter
+GymLog.Activities.AddExercise, GymLog;md5fe439492bfa6be88e6b31b9b10d06a23.AddExercise
+GymLog.Activities.AddExercise, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5fe439492bfa6be88e6b31b9b10d06a23.AddExercise
+GymLog.Activities.AddExercise;md5fe439492bfa6be88e6b31b9b10d06a23.AddExercise
+gymlog.activities.AddExercise;md5fe439492bfa6be88e6b31b9b10d06a23.AddExercise
+GymLog.Activities.MainActivity, GymLog;md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity
+GymLog.Activities.MainActivity, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity
+GymLog.Activities.MainActivity;md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity
+gymlog.activities.MainActivity;md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity
+GymLog.Adapters.ExercisesAdapter, GymLog;md559d1f1c68d0ba55b6e42580d93bd9e8d.ExercisesAdapter
+GymLog.Adapters.ExercisesAdapter, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md559d1f1c68d0ba55b6e42580d93bd9e8d.ExercisesAdapter
+GymLog.Adapters.ExercisesAdapter;md559d1f1c68d0ba55b6e42580d93bd9e8d.ExercisesAdapter
+gymlog.adapters.ExercisesAdapter;md559d1f1c68d0ba55b6e42580d93bd9e8d.ExercisesAdapter
 GymLog.Adapters.HomePagerAdapter, GymLog;md559d1f1c68d0ba55b6e42580d93bd9e8d.HomePagerAdapter
 GymLog.Adapters.HomePagerAdapter, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md559d1f1c68d0ba55b6e42580d93bd9e8d.HomePagerAdapter
 GymLog.Adapters.HomePagerAdapter;md559d1f1c68d0ba55b6e42580d93bd9e8d.HomePagerAdapter

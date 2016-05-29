@@ -35,7 +35,7 @@ namespace GymLog.Fragments
         public override void OnViewCreated(View view, Bundle savedInstanceState)
         {
             var lv = view.FindViewById<ListView>(Resource.Id.listViewExercises);
-            lv.Adapter = new ExerciseListViewAdapter(base.Activity, lm.LogsToday);
+            lv.Adapter = new ExercisesAdapter(base.Activity, lm.LogsToday);
 
 
         }    
