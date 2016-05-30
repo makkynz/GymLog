@@ -32,5 +32,14 @@ namespace GymLog.Shared.Manager
         {
             return Exercises[_rand.Next(Exercises.Count)];
         }
+
+        public static Exercise GetExerciseById(int id)
+        {
+            var result = (from e in DataManager.DB.Table<Exercise>()
+                          where e.Id == id
+                          select e).SingleOrDefault();
+
+            return result;
+        }
     }
 }

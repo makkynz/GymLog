@@ -12,11 +12,7 @@ C:\work\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.pdb
 C:\work\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.csprojResolveAssemblyReference.cache
 C:\work\GymLog\GymLog.Shared\bin\Debug\SQLite-net.dll
 C:\work\GymLog\GymLog.Shared\bin\Debug\SQLitePCL.raw.dll
-C:\work\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.dll.mdb
-C:\work\GymLog\GymLog.Shared\bin\Debug\GymLog.Shared.dll.mdb
-C:\work\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.dll.mdb
-C:\work\GymLog\GymLog.Shared\bin\Debug\GymLog.Shared.dll.mdb
-C:\work\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.dll.mdb
-C:\work\GymLog\GymLog.Shared\bin\Debug\GymLog.Shared.dll.mdb
+C:\work\GymLog\GymLog.Shared\bin\Debug\Newtonsoft.Json.dll
+C:\work\GymLog\GymLog.Shared\bin\Debug\Newtonsoft.Json.xml
 C:\work\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.dll.mdb
 C:\work\GymLog\GymLog.Shared\bin\Debug\GymLog.Shared.dll.mdb

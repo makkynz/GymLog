@@ -14,15 +14,17 @@ namespace GymLog.Shared.Manager
         {
             get
             {
-                var logs = new List<ExerciseLog>();
-                var rand = new Random();
-                for (var i =0; i< 10;i++)
-                {
-                    logs.Add(new ExerciseLog { DateCreated = DateTime.Now, Exercise = em.GetRandomExercise(), SetCount = rand.Next(10) });
-                }
+                var logs = DataManager.DB.Query<ExerciseLog>("SELECT * FROM ExerciseLog WHERE DateCreated BETWEEN '2016-05-30 00:00:00' AND '2016-05-31 00:00:00'");
+
+                //var logs = (from l in DataManager.DB.Table<ExerciseLog>()
+                //        where l.DateCreated.Date == DateTime.Today
+                //            select l).ToList();
+               
 
                 return logs;
             }
         }
+
+        
     }
 }
