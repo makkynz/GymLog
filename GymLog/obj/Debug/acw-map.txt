@@ -1,3 +1,7 @@
+GymLog.GymLoggApp, GymLog;md5a274b079c26abc6016b0356a7d205c7c.GymLoggApp
+GymLog.GymLoggApp, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a274b079c26abc6016b0356a7d205c7c.GymLoggApp
+GymLog.GymLoggApp;md5a274b079c26abc6016b0356a7d205c7c.GymLoggApp
+gymlog.GymLoggApp;md5a274b079c26abc6016b0356a7d205c7c.GymLoggApp
 GymLog.Fragments.LogListFragment, GymLog;md5eb50f95c253920b1c37d85c993565753.LogListFragment
 GymLog.Fragments.LogListFragment, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5eb50f95c253920b1c37d85c993565753.LogListFragment
 GymLog.Fragments.LogListFragment;md5eb50f95c253920b1c37d85c993565753.LogListFragment

@@ -11,16 +11,20 @@ namespace GymLog.Shared.Manager
     {
 
         private static Random _rand = new Random();
+        private static List<Exercise> _exercises;
+
         public static List<Exercise> Exercises
         {
             get
             {
-                return new List<Exercise>
+                if (_exercises == null)
                 {
-                    new Exercise { Name="Machine Chest Press", Metric = Enums.ExerciseMetricsEnum.WeightAndReps  },
-                    new Exercise { Name="Rowwing Machine",  Metric = Enums.ExerciseMetricsEnum.TimeAndDistance   },
-                    new Exercise { Name="Barbell Squat",  Metric = Enums.ExerciseMetricsEnum.WeightAndReps   }
-                };
+                    _exercises = (from e in DataManager.DB.Table<Exercise>()
+                                  select e).ToList();
+                }
+
+                return _exercises;
+
             }
         }
 

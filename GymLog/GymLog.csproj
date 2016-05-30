@@ -79,6 +79,7 @@
     <Compile Include="Fragments\LogListFragment.cs" />
     <Compile Include="Fragments\HistoryFragment.cs" />
     <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="GymLoggApp.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Fragments\TodayFragment.cs" />
@@ -114,6 +115,7 @@
     <AndroidResource Include="Resources\layout\Main.axml" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\gymlog.db" />
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +171,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\orange_plus.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
