@@ -14,7 +14,7 @@ namespace GymLog.Shared.Manager
         {
             get
             {
-                var logs = DataManager.DB.Query<ExerciseLog>("SELECT * FROM ExerciseLog WHERE DateCreated BETWEEN '2016-05-30 00:00:00' AND '2016-05-31 00:00:00'");
+                var logs = DataManager.DB.Query<ExerciseLog>("SELECT * FROM ExerciseLog WHERE DateCreated");// BETWEEN '2016-05-30 00:00:00' AND '2016-05-31 00:00:00'");
 
                 //var logs = (from l in DataManager.DB.Table<ExerciseLog>()
                 //        where l.DateCreated.Date == DateTime.Today

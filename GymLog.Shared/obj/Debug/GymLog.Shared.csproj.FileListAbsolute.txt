@@ -16,3 +16,5 @@ C:\work\GymLog\GymLog.Shared\bin\Debug\Newtonsoft.Json.dll
 C:\work\GymLog\GymLog.Shared\bin\Debug\Newtonsoft.Json.xml
 C:\work\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.dll.mdb
 C:\work\GymLog\GymLog.Shared\bin\Debug\GymLog.Shared.dll.mdb
+C:\work\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.dll.mdb
+C:\work\GymLog\GymLog.Shared\bin\Debug\GymLog.Shared.dll.mdb
