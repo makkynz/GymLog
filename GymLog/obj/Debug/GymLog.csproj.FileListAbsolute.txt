@@ -60,5 +60,6 @@ C:\work\GymLog\GymLog\obj\Debug\res\drawable\orange_plus.png
 C:\work\GymLog\GymLog\bin\Debug\SQLite-net.dll
 C:\work\GymLog\GymLog\bin\Debug\SQLitePCL.raw.dll
 C:\work\GymLog\GymLog\obj\Debug\res\drawable\splash_screen.xml
+C:\work\GymLog\GymLog\bin\Debug\GymLog.Shared.dll.mdb
 C:\work\GymLog\GymLog\obj\Debug\GymLog.dll.mdb
 C:\work\GymLog\GymLog\bin\Debug\GymLog.dll.mdb

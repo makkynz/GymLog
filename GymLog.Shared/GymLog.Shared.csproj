@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\StringHelper.cs" />
     <Compile Include="Manager\DataManager.cs" />
     <Compile Include="Manager\ExerciseManager.cs" />
     <Compile Include="Manager\LogManager.cs" />

@@ -1,0 +1,12 @@
+C:\work\GymLog\GymLog.Console\bin\Debug\GymLog.Console.exe.config
+C:\work\GymLog\GymLog.Console\bin\Debug\GymLog.Console.exe
+C:\work\GymLog\GymLog.Console\bin\Debug\GymLog.Console.pdb
+C:\work\GymLog\GymLog.Console\bin\Debug\GymLog.Shared.dll
+C:\work\GymLog\GymLog.Console\bin\Debug\SQLite-net.dll
+C:\work\GymLog\GymLog.Console\bin\Debug\GymLog.Shared.pdb
+C:\work\GymLog\GymLog.Console\obj\Debug\GymLog.Console.csprojResolveAssemblyReference.cache
+C:\work\GymLog\GymLog.Console\obj\Debug\GymLog.Console.exe
+C:\work\GymLog\GymLog.Console\obj\Debug\GymLog.Console.pdb
+C:\work\GymLog\GymLog.Console\bin\Debug\x86\sqlite3.dll
+C:\work\GymLog\GymLog.Console\bin\Debug\x64\sqlite3.dll
+C:\work\GymLog\GymLog.Console\bin\Debug\SQLitePCL.raw.dll
