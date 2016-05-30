@@ -14,17 +14,29 @@ namespace GymLog.Shared.Manager
         {
             get
             {
-                var logs = DataManager.DB.Query<ExerciseLog>("SELECT * FROM ExerciseLog WHERE DateCreated");// BETWEEN '2016-05-30 00:00:00' AND '2016-05-31 00:00:00'");
+                var startOfDayTicks = DateTime.Now.Date.Ticks;
+                var endOfDayTicks = DateTime.Now.Date.AddDays(1).AddTicks(-1).Ticks;
 
-                //var logs = (from l in DataManager.DB.Table<ExerciseLog>()
-                //        where l.DateCreated.Date == DateTime.Today
-                //            select l).ToList();
-               
+                var logs = DataManager.DB.Query<ExerciseLog>("SELECT * FROM ExerciseLog WHERE DateCreated BETWEEN ? AND ?", startOfDayTicks, endOfDayTicks);
 
+             
                 return logs;
             }
         }
 
-        
+        public static List<ExerciseLog> LogsHistory
+        {
+            get
+            {
+                var startOfDayTicks = DateTime.Now.Date.Ticks;                
+
+                var logs = DataManager.DB.Query<ExerciseLog>("SELECT * FROM ExerciseLog WHERE DateCreated < ? ", startOfDayTicks);
+
+               
+                return logs;
+            }
+        }
+
+
     }
 }

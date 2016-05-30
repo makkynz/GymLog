@@ -6,6 +6,12 @@
     <item name="colorAccent" >#ff6e40</item >
     
   </style>
+
+  <style name="MyTheme.Splash" parent ="Theme.AppCompat.Light">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
   <string name="globalPadding">20dp</string>
   <string name="h1Size">18dp</string>
   <string name="bodyTextSize">15dp</string>

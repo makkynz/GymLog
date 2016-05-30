@@ -22,14 +22,6 @@ GymLog.ExtendedControls.SlidingTabStrip, GymLog;md51a2383b5d11193196204226c421a5
 GymLog.ExtendedControls.SlidingTabStrip, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md51a2383b5d11193196204226c421a5e73.SlidingTabStrip
 GymLog.ExtendedControls.SlidingTabStrip;md51a2383b5d11193196204226c421a5e73.SlidingTabStrip
 gymlog.extendedcontrols.SlidingTabStrip;md51a2383b5d11193196204226c421a5e73.SlidingTabStrip
-GymLog.Activities.AddExerciseActivity, GymLog;md5fe439492bfa6be88e6b31b9b10d06a23.AddExerciseActivity
-GymLog.Activities.AddExerciseActivity, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5fe439492bfa6be88e6b31b9b10d06a23.AddExerciseActivity
-GymLog.Activities.AddExerciseActivity;md5fe439492bfa6be88e6b31b9b10d06a23.AddExerciseActivity
-gymlog.activities.AddExerciseActivity;md5fe439492bfa6be88e6b31b9b10d06a23.AddExerciseActivity
-GymLog.Activities.MainActivity, GymLog;md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity
-GymLog.Activities.MainActivity, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity
-GymLog.Activities.MainActivity;md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity
-gymlog.activities.MainActivity;md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity
 GymLog.Adapters.ExerciseListAdapter, GymLog;md559d1f1c68d0ba55b6e42580d93bd9e8d.ExerciseListAdapter
 GymLog.Adapters.ExerciseListAdapter, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md559d1f1c68d0ba55b6e42580d93bd9e8d.ExerciseListAdapter
 GymLog.Adapters.ExerciseListAdapter;md559d1f1c68d0ba55b6e42580d93bd9e8d.ExerciseListAdapter
@@ -54,6 +46,18 @@ GymLog.Adapters.SlidingTabsAdapter, GymLog;md559d1f1c68d0ba55b6e42580d93bd9e8d.S
 GymLog.Adapters.SlidingTabsAdapter, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md559d1f1c68d0ba55b6e42580d93bd9e8d.SlidingTabsAdapter
 GymLog.Adapters.SlidingTabsAdapter;md559d1f1c68d0ba55b6e42580d93bd9e8d.SlidingTabsAdapter
 gymlog.adapters.SlidingTabsAdapter;md559d1f1c68d0ba55b6e42580d93bd9e8d.SlidingTabsAdapter
+GymLog.Activities.SplashScreenActivity, GymLog;md5fe439492bfa6be88e6b31b9b10d06a23.SplashScreenActivity
+GymLog.Activities.SplashScreenActivity, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5fe439492bfa6be88e6b31b9b10d06a23.SplashScreenActivity
+GymLog.Activities.SplashScreenActivity;md5fe439492bfa6be88e6b31b9b10d06a23.SplashScreenActivity
+gymlog.activities.SplashScreenActivity;md5fe439492bfa6be88e6b31b9b10d06a23.SplashScreenActivity
+GymLog.Activities.AddExerciseActivity, GymLog;md5fe439492bfa6be88e6b31b9b10d06a23.AddExerciseActivity
+GymLog.Activities.AddExerciseActivity, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5fe439492bfa6be88e6b31b9b10d06a23.AddExerciseActivity
+GymLog.Activities.AddExerciseActivity;md5fe439492bfa6be88e6b31b9b10d06a23.AddExerciseActivity
+gymlog.activities.AddExerciseActivity;md5fe439492bfa6be88e6b31b9b10d06a23.AddExerciseActivity
+GymLog.Activities.MainActivity, GymLog;md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity
+GymLog.Activities.MainActivity, GymLog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity
+GymLog.Activities.MainActivity;md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity
+gymlog.activities.MainActivity;md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
