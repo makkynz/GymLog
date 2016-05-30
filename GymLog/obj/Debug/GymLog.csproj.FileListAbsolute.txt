@@ -45,9 +45,14 @@ C:\work\GymLog\GymLog\obj\Debug\res\drawable\ic_action_undo.png
 C:\work\GymLog\GymLog\obj\Debug\res\drawable\ic_plus.png
 C:\work\GymLog\GymLog\bin\Debug\Xamarin.Android.Support.Design.dll
 C:\work\GymLog\GymLog\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
-C:\work\GymLog\GymLog\bin\Debug\GymLog.Shared.dll.mdb
 C:\work\GymLog\GymLog\obj\Debug\res\layout\addexerciseactivity.xml
-C:\work\GymLog\GymLog\obj\Debug\res\layout\exerciserow.xml
-C:\work\GymLog\GymLog\obj\Debug\res\layout\exerciselist.xml
+C:\work\GymLog\GymLog\obj\Debug\res\layout\logrow.xml
+C:\work\GymLog\GymLog\obj\Debug\res\layout\loglist.xml
+C:\work\GymLog\GymLog\obj\Debug\res\drawable\list_item_bg.xml
+C:\work\GymLog\GymLog\obj\Debug\res\drawable\pulldown.jpg
+C:\work\GymLog\GymLog\bin\Debug\Newtonsoft.Json.dll
+C:\work\GymLog\GymLog\bin\Debug\Newtonsoft.Json.xml
+C:\work\GymLog\GymLog\obj\Debug\res\drawable\mask_frame.png
+C:\work\GymLog\GymLog\bin\Debug\GymLog.Shared.dll.mdb
 C:\work\GymLog\GymLog\obj\Debug\GymLog.dll.mdb
 C:\work\GymLog\GymLog\bin\Debug\GymLog.dll.mdb

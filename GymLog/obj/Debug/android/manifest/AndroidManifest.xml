@@ -5,8 +5,8 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="GymLog" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
-    <activity android:label="AddExercise" android:theme="@style/MyTheme" android:name="md5fe439492bfa6be88e6b31b9b10d06a23.AddExercise" />
-    <activity android:icon="@drawable/icon" android:label="GymLog" android:theme="@style/MyTheme" android:name="md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:label="AddExercise" android:theme="@style/MyTheme" android:name="md5fe439492bfa6be88e6b31b9b10d06a23.AddExercise" />
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="GymLog" android:theme="@style/MyTheme" android:name="md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

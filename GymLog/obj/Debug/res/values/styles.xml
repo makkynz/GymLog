@@ -1,1 +1,1 @@
-<resources><style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar"><item name="colorPrimary">#009688</item><item name="colorPrimaryDark">#00796b</item><item name="colorAccent">#ff6e40</item></style></resources>
+<resources><style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar"><item name="colorPrimary">#009688</item><item name="colorPrimaryDark">#00796b</item><item name="colorAccent">#ff6e40</item></style><string name="globalPadding">20dp</string><string name="h1Size">18dp</string><string name="bodyTextSize">15dp</string></resources>

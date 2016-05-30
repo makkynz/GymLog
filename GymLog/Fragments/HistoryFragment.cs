@@ -35,7 +35,7 @@ namespace GymLog.Fragments
         public override void OnViewCreated(View view, Bundle savedInstanceState)
         {
             //bind Exercies list (nested fragment)
-            var exerciseList = new ExerciseListFragment(lm.LogsToday);
+            var exerciseList = LogListFragment.Instance(lm.LogsToday);             
             var trans = ChildFragmentManager.BeginTransaction();
             trans.Add(Resource.Id.linearLayoutExercises, exerciseList).Commit();           
 

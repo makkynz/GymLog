@@ -15,12 +15,14 @@ using Android.Support.V4.App;
 using lm = GymLog.Shared.Manager.LogManager;
 using GymLog.Adapters;
 using Android.Support.Design.Widget;
+using Newtonsoft.Json;
 
 namespace GymLog.Fragments
 {
     public class TodayFragment : Fragment
     {
         
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);            
@@ -37,7 +39,9 @@ namespace GymLog.Fragments
         {
 
             //bind Exercies list
-            var exerciseList = new ExerciseListFragment(lm.LogsToday);
+            var exerciseList = LogListFragment.Instance(lm.LogsToday);
+
+
             var trans = ChildFragmentManager.BeginTransaction();
             trans.Add(Resource.Id.frameLayoutExercises, exerciseList).Commit();           
 
