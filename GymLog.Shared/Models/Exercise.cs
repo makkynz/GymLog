@@ -13,6 +13,7 @@ namespace GymLog.Shared.Models
         public string Id { get { return $"{Name.ToLower().Replace(" ", "-")}"; } }      
         public string Photo { get; set; }
         public string Description { get; set; }
+        public string KeyStat { get { return "1 Rep Max: 70Kg"; } }
 
     }
 }

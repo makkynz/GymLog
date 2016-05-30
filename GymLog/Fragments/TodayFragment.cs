@@ -50,7 +50,7 @@ namespace GymLog.Fragments
             var fab = view.FindViewById<FloatingActionButton>(Resource.Id.fab);            
             fab.Click += (sender, args) =>
             {
-                var intent = new Intent(base.Activity, typeof(Activities.AddExercise));
+                var intent = new Intent(base.Activity, typeof(Activities.AddExerciseActivity));
                 StartActivity(intent);
             };
 

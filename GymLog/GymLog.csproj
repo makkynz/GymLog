@@ -69,9 +69,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\ExerciseListAdapter.cs" />
     <Compile Include="Adapters\LogAdapter.cs" />
     <Compile Include="Adapters\HomePagerAdapter.cs" />
-    <Compile Include="Activities\AddExercise.cs" />
+    <Compile Include="Activities\AddExerciseActivity.cs" />
+    <Compile Include="Adapters\SlidingTabsAdapter.cs" />
+    <Compile Include="ExtendedControls\SlidingTabScrollView.cs" />
+    <Compile Include="ExtendedControls\SlidingTabStrip.cs" />
     <Compile Include="Fragments\LogListFragment.cs" />
     <Compile Include="Fragments\HistoryFragment.cs" />
     <Compile Include="Activities\MainActivity.cs" />
@@ -97,6 +101,12 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\list_item_bg.xml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ExerciseRow.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ExerciseList.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -152,6 +162,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\mask_frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\app_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\orange_plus.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
