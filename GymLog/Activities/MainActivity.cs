@@ -10,6 +10,7 @@ using Android.Support.V4.View;
 using GymLog.Adapters;
 using Android.Support.V7.App;
 using GymLog.ExtendedControls;
+using System.Collections.Generic;
 
 namespace GymLog.Activities
 {
@@ -35,7 +36,7 @@ namespace GymLog.Activities
             //setup sliding tabs
             _slidingTabScrollView = FindViewById<SlidingTabScrollView>(Resource.Id.sliding_tabs);
             _viewPager = FindViewById<ViewPager>(Resource.Id.viewPager);
-            _viewPager.Adapter = new SlidingTabsAdapter();
+            _viewPager.Adapter = new SlidingTabsAdapter(new List<string>() { "Today's Exercises", "History" });
             _slidingTabScrollView.ViewPage = _viewPager;
 
             //add page viewer

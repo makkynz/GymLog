@@ -57,13 +57,19 @@ namespace GymLog.Fragments
             _adapter = new LogAdapter(base.Activity, _logs);
             _recyclerView.SetAdapter(_adapter);
 
+            _adapter.RowClick += _adapter_RowClick;
+
             // Use this to return your custom view for this Fragment
             return view;
 
 
         }
 
-        
-       
+        private void _adapter_RowClick(object sender, int position)
+        {
+            var intent = new Intent(base.Activity, typeof(Activities.ExerciseDetailActivity));
+            intent.PutExtra("LogId", _logs[position].Id);
+            StartActivity(intent);
+        }
     }
 }

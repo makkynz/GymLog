@@ -38,5 +38,15 @@ namespace GymLog.Shared.Manager
         }
 
 
+        public static ExerciseLog GetLogById(int id)
+        {
+            var result = (from e in DataManager.DB.Table<ExerciseLog>()
+                          where e.Id == id
+                          select e).SingleOrDefault();
+
+            return result;
+        }
+
+
     }
 }

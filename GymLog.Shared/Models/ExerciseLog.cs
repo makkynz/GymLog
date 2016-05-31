@@ -12,7 +12,7 @@ namespace GymLog.Shared.Models
     public class ExerciseLog
     {
         [PrimaryKey, AutoIncrement]
-        public int? Id { get; set; }
+        public int Id { get; set; }
         public int ExerciseId { get; set; }
 
         [Ignore]

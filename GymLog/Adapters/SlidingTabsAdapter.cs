@@ -15,14 +15,19 @@ namespace GymLog.Adapters
 {
     public class SlidingTabsAdapter : PagerAdapter
     {
-        List<string> items = new List<string>() { "Today", "History" };
+        List<string> _items = new List<string>() { "Today", "History" };
 
-        
+        public  SlidingTabsAdapter (List<string> items)
+        {
+            _items = items;
+        }
+
+
         public override int Count
         {
             get
             {
-                return items.Count;
+                return _items.Count;
             }
         }
 
@@ -33,7 +38,7 @@ namespace GymLog.Adapters
 
         public string GetHeaderTitle(int position)
         {
-            return items[position];
+            return _items[position];
         }
         public override void DestroyItem(ViewGroup container, int position, Java.Lang.Object obj)
         {
