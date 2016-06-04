@@ -47,7 +47,7 @@ namespace GymLog.Activities
 
             //add page viewer
             var viewPage = FindViewById<ViewPager>(Resource.Id.viewPager);
-            viewPage.Adapter = new ExerciseDetailPagerAdapter(base.SupportFragmentManager, _Log.Id);
+            viewPage.Adapter = new ExerciseDetailPagerAdapter(base.SupportFragmentManager, _Log.Id.Value);
            
 
         }

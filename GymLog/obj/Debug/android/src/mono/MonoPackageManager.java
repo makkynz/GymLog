@@ -82,6 +82,7 @@ class MonoPackageManager_Resources {
 		"GymLog.dll",
 		"GymLog.Shared.dll",
 		"Newtonsoft.Json.dll",
+		"SQLitePCL.raw.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.AppCompat.dll",
@@ -136,7 +137,6 @@ class MonoPackageManager_Resources {
 		"System.Xml.XDocument.dll",
 		"System.Xml.XmlSerializer.dll",
 		"SQLite-net.dll",
-		"SQLitePCL.raw.dll",
 		"System.ServiceModel.Internals.dll",
 	};
 	public static final String[] Dependencies = new String[]{

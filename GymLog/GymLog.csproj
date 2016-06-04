@@ -47,6 +47,10 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="SQLitePCL.raw, Version=0.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCL.raw_basic.0.7.1\lib\MonoAndroid\SQLitePCL.raw.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -73,6 +77,7 @@
     <Compile Include="Activities\SplashScreenActivity.cs" />
     <Compile Include="Adapters\ExerciseListAdapter.cs" />
     <Compile Include="Adapters\ExerciseDetailPagerAdapter.cs" />
+    <Compile Include="Adapters\AddLogListAdapter.cs" />
     <Compile Include="Adapters\LogAdapter.cs" />
     <Compile Include="Adapters\HomePagerAdapter.cs" />
     <Compile Include="Activities\AddExerciseActivity.cs" />
@@ -131,6 +136,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ExerciseDetail_Reports.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AddLogRow.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

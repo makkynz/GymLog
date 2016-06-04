@@ -3,12 +3,30 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="top"
     android:minWidth="25px"
     android:minHeight="25px">
-    <TextView
-        android:text="Add Log Layout"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayoutExercises">
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listViewLogs"
+            android:descendantFocusability="afterDescendants"
+            android:focusable="false" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/ic_plus"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+    </FrameLayout>
 </LinearLayout>

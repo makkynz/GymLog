@@ -3,6 +3,7 @@ C:\work\GymLog\GymLog\obj\Debug\assemblies\GymLog.Shared.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\Mono.Android.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\mscorlib.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\Newtonsoft.Json.dll
+C:\work\GymLog\GymLog\obj\Debug\assemblies\SQLitePCL.raw.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\System.Core.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\System.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\System.Xml.dll
@@ -61,7 +62,6 @@ C:\work\GymLog\GymLog\obj\Debug\assemblies\System.Xml.ReaderWriter.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\System.Xml.XDocument.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\System.Xml.XmlSerializer.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\SQLite-net.dll
-C:\work\GymLog\GymLog\obj\Debug\assemblies\SQLitePCL.raw.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\System.Runtime.Serialization.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\System.ServiceModel.Internals.dll
 C:\work\GymLog\GymLog\obj\Debug\assemblies\System.ComponentModel.DataAnnotations.dll

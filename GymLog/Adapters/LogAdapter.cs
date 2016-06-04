@@ -46,10 +46,10 @@ namespace GymLog.Adapters
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
             var lh = holder as LogViewHolder;
-            
+            var setCount = _logs[position].SetCount;
 
             lh.TextViewName.Text = _logs[position].Exercise.Name;
-            lh.TextViewSets.Text = $"{_logs[position].SetCount.ToString()} {StringHelper.Pluralise("set","sets", _logs[position].SetCount)}";
+            lh.TextViewSets.Text = $"{setCount.ToString()} {StringHelper.Pluralise("set","sets", setCount)}";
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)

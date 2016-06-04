@@ -68,7 +68,7 @@ namespace GymLog.Fragments
         private void _adapter_RowClick(object sender, int position)
         {
             var intent = new Intent(base.Activity, typeof(Activities.ExerciseDetailActivity));
-            intent.PutExtra("LogId", _logs[position].Id);
+            intent.PutExtra("LogId", _logs[position].Id.Value);
             StartActivity(intent);
         }
     }

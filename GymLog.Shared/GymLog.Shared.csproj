@@ -54,6 +54,7 @@
     <Compile Include="Manager\LogManager.cs" />
     <Compile Include="Models\Exercise.cs" />
     <Compile Include="Enums\ExerciseEnum.cs" />
+    <Compile Include="Models\ExerciseSet.cs" />
     <Compile Include="Models\ExerciseLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

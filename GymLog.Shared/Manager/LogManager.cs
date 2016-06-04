@@ -16,7 +16,7 @@ namespace GymLog.Shared.Manager
             {
                 var startOfDayTicks = DateTime.Now.Date.Ticks;
                 var endOfDayTicks = DateTime.Now.Date.AddDays(1).AddTicks(-1).Ticks;
-
+                var test = DataManager.DB.Query<ExerciseLog>("SELECT * FROM ExerciseLog ");
                 var logs = DataManager.DB.Query<ExerciseLog>("SELECT * FROM ExerciseLog WHERE DateCreated BETWEEN ? AND ?", startOfDayTicks, endOfDayTicks);
 
              
@@ -47,6 +47,7 @@ namespace GymLog.Shared.Manager
             return result;
         }
 
+       
 
     }
 }

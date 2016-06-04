@@ -12,7 +12,7 @@ namespace GymLog.Shared.Models
     public class ExerciseLog
     {
         [PrimaryKey, AutoIncrement]
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public int ExerciseId { get; set; }
 
         [Ignore]
@@ -27,20 +27,59 @@ namespace GymLog.Shared.Models
                 return _Exercise;
             }
             set {
-                ExerciseId = value.Id;
+                ExerciseId = value.Id.Value;
                 _Exercise = value;
             }
         }
         public DateTime DateCreated { get; set; }
-        public int SetCount { get; set; }
 
-        private Exercise _Exercise;
+
+        [Ignore]
+        [JsonIgnore]
+        public List<ExerciseSet> Sets
+        {
+            get
+            {
+                if(_Sets == null)
+                {
+                    _Sets = (from e in DataManager.DB.Table<ExerciseSet>()
+                                  where e.ExerciseLogId == this.Id
+                                  select e).ToList();
+
+                    if (_Sets.Count == 0)
+                    {
+                        _Sets.Add(new ExerciseSet(this.Id.Value)); //for empty new row
+                    }
+                }
+
+                return _Sets;
+            }
+        }
+
+        [Ignore]
+        [JsonIgnore]
+        public int SetCount
+        {
+            get
+            { 
+                return this.Sets.Count;
+            }
+        }
+
+        List<ExerciseSet> _Sets;      
+        Exercise _Exercise;
         
         public void Save()
         {
             var db = DataManager.DB;
             db.InsertOrReplace(this);
             db.Commit();
+            
+        }
+
+        public void AddNewSet()
+        {
+            this.Sets.Add(new ExerciseSet(this.Id.Value));
         }
 
     }

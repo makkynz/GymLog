@@ -1,0 +1,7 @@
+Gym Log Today
+========================
+
+Exercise detail Log 
+- Add Plus floating button to add new log
+- Add X button on each log row
+- Save log to DB

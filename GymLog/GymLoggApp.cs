@@ -26,7 +26,7 @@ namespace GymLog
             base.OnCreate();
             var docFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);            
             var dbFile = Path.Combine(docFolder, DataManager.DB_FILE); // FILE NAME TO USE WHEN COPIED
-            //System.IO.File.Delete(dbFile);
+            System.IO.File.Delete(dbFile);
             if (!System.IO.File.Exists(dbFile))
             {
                 

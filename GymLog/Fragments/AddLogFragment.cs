@@ -18,14 +18,15 @@ using GymLog.Shared.Models;
 using Android.Support.V7.Widget;
 using Newtonsoft.Json;
 using GymLog.Shared.Manager;
+using Android.Support.Design.Widget;
 
 namespace GymLog.Fragments
 {
     public class AddLogFragment : Fragment
     {
 
-        ExerciseLog _log;      
-        
+        ExerciseLog _log;
+        AddLogListAdapter _addLogListAdapter;
 
         public static AddLogFragment Instance(int LogId)
         {
@@ -46,8 +47,22 @@ namespace GymLog.Fragments
         {
             var view = inflater.Inflate(Resource.Layout.AddLog, container, false);
             _log = LogManager.GetLogById(Arguments.GetInt("LogId"));
-           
-            // Use this to return your custom view for this Fragment
+
+
+            /*bind log list*/
+            var listViewLogs = view.FindViewById<ListView>(Resource.Id.listViewLogs);
+            _addLogListAdapter = new AddLogListAdapter(base.Activity, _log.Sets);          
+            listViewLogs.Adapter = _addLogListAdapter;
+
+            
+            /*bind Plus button*/
+            var fab = view.FindViewById<FloatingActionButton>(Resource.Id.fab);
+            fab.Click += (sender, args) =>
+            {
+                _log.AddNewSet();
+                _addLogListAdapter.NotifyDataSetChanged();
+            };
+
             return view;
 
 

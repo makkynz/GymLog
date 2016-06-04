@@ -76,8 +76,8 @@ namespace GymLog.Activities
             var newLog = new ExerciseLog
             {
                 DateCreated = DateTime.Now,
-                Exercise = _exercises[position],
-                SetCount = 0
+                Exercise = _exercises[position]
+                
 
             };
             newLog.Save();
