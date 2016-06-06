@@ -70,6 +70,7 @@ namespace GymLog.Fragments
             var intent = new Intent(base.Activity, typeof(Activities.ExerciseDetailActivity));
             intent.PutExtra("LogId", _logs[position].Id.Value);
             StartActivity(intent);
+
         }
     }
 }

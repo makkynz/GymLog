@@ -62,7 +62,7 @@ namespace GymLog.Adapters
             var lblStatTwo = row.FindViewById<TextView>(Resource.Id.lblStatTwo);
            
 
-            lblSetNbr.Text = $"Set {(position + 1).ToString()}";
+            lblSetNbr.Text = (position + 1).ToString();
 
             //set metric hints
             var statCount = 0;
@@ -85,10 +85,11 @@ namespace GymLog.Adapters
                 txtStatOne.RequestFocus();
             }
            
-
+            //set text boc value
             txtStatOne.Text = set.StatOne.HasValue ? set.StatOne.Value.ToString() : "";
             txtStatTwo.Text = set.StatTwo.HasValue?  set.StatTwo.Value.ToString() : "";
 
+            //set event handlers
             txtStatOne.TextChanged += (s, e) =>
             {
                 if (!String.IsNullOrWhiteSpace(txtStatOne.Text))

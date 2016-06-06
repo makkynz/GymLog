@@ -46,10 +46,7 @@ namespace GymLog.Shared.Models
                                   where e.ExerciseLogId == this.Id
                                   select e).ToList();
 
-                    if (_Sets.Count == 0)
-                    {
-                        _Sets.Add(new ExerciseSet(this.Id.Value)); //for empty new row
-                    }
+                   
                 }
 
                 return _Sets;

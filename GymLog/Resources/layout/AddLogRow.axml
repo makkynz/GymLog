@@ -7,13 +7,17 @@
     android:paddingLeft="10dp"
     android:paddingRight="10dp">
     <TextView
-        android:text="Set 1"
+        android:text="1"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:id="@+id/lblSetNbr"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:textSize="30dp" />
+        android:layout_gravity="center_vertical"
+        android:textSize="20dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="-30dp" />
     <EditText
         android:inputType="phone"
         android:layout_height="wrap_content"
@@ -27,8 +31,10 @@
         android:digits="1234567890"
         android:numeric="decimal"
         android:text="23"
-        android:minWidth="70dp"
-        android:maxLength="3" />
+        android:minWidth="90dp"
+        android:maxLength="3"
+        android:background="@android:color/transparent"
+        android:paddingRight="10dp" />
     <TextView
         android:text="kg"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -36,7 +42,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/lblStatOne"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:textSize="30dp" />
+        android:textSize="30dp"
+        android:textColor="#cccccc" />
     <EditText
         android:inputType="phone"
         android:layout_height="wrap_content"
@@ -50,7 +57,9 @@
         android:numeric="decimal"
         android:text="6"
         android:minWidth="70dp"
-        android:maxLength="3" />
+        android:maxLength="3"
+        android:background="@android:color/transparent"
+        android:paddingRight="5dp" />
     <TextView
         android:text="reps"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -58,5 +67,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/lblStatTwo"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:textSize="30dp" />
+        android:textSize="30dp"
+        android:textColor="#cccccc" />
 </LinearLayout>

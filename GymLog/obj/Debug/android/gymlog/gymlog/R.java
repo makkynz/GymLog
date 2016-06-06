@@ -2272,10 +2272,11 @@ containing a value of this type.
         public static final int icon=0x7f020051;
         public static final int list_item_bg=0x7f020052;
         public static final int mask_frame=0x7f020053;
-        public static final int notification_template_icon_bg=0x7f020057;
+        public static final int notification_template_icon_bg=0x7f020058;
         public static final int orange_plus=0x7f020054;
         public static final int pulldown=0x7f020055;
-        public static final int splash_screen=0x7f020056;
+        public static final int rounded_corner=0x7f020056;
+        public static final int splash_screen=0x7f020057;
     }
     public static final class id {
         public static final int LogRowName=0x7f060089;

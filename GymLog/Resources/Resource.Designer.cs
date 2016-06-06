@@ -1827,8 +1827,8 @@ namespace GymLog
 			// aapt resource value: 0x7f020053
 			public const int mask_frame = 2130837587;
 			
-			// aapt resource value: 0x7f020057
-			public const int notification_template_icon_bg = 2130837591;
+			// aapt resource value: 0x7f020058
+			public const int notification_template_icon_bg = 2130837592;
 			
 			// aapt resource value: 0x7f020054
 			public const int orange_plus = 2130837588;
@@ -1837,7 +1837,10 @@ namespace GymLog
 			public const int pulldown = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int splash_screen = 2130837590;
+			public const int rounded_corner = 2130837590;
+			
+			// aapt resource value: 0x7f020057
+			public const int splash_screen = 2130837591;
 			
 			static Drawable()
 			{

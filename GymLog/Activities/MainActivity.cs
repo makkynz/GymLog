@@ -14,7 +14,11 @@ using System.Collections.Generic;
 
 namespace GymLog.Activities
 {
-    [Activity( MainLauncher = false,  Theme = "@style/MyTheme", ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize)]
+    [Activity( MainLauncher = false,  
+        Theme = "@style/MyTheme",
+        ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize
+      ,LaunchMode = Android.Content.PM.LaunchMode.SingleTop
+        )]
     public class MainActivity : AppCompatActivity
     {
 
@@ -40,8 +44,8 @@ namespace GymLog.Activities
             _slidingTabScrollView.ViewPage = _viewPager;
 
             //add page viewer
-            var viewPage = FindViewById<ViewPager>(Resource.Id.viewPager);
-            viewPage.Adapter = new HomePagerAdapter(base.SupportFragmentManager);
+            _viewPager = FindViewById<ViewPager>(Resource.Id.viewPager);
+            _viewPager.Adapter = new HomePagerAdapter(base.SupportFragmentManager);
            
 
         }

@@ -51,7 +51,8 @@ namespace GymLog.Fragments
 
             /*bind log list*/
             var listViewLogs = view.FindViewById<ListView>(Resource.Id.listViewLogs);
-            _addLogListAdapter = new AddLogListAdapter(base.Activity, _log.Sets);          
+            if (_log.Sets.Count == 0) _log.AddNewSet();
+           _addLogListAdapter = new AddLogListAdapter(base.Activity, _log.Sets);          
             listViewLogs.Adapter = _addLogListAdapter;
 
             
