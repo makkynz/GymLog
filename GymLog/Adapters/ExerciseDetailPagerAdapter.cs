@@ -1,42 +1,62 @@
 using Android.Support.V4.App;
 using GymLog.Fragments;
+using GymLog.Interfaces;
 using System.Collections.Generic;
+using System;
 
 namespace GymLog.Adapters
 {
     /// <summary>
     ///  Nest Adapter
     /// </summary>
-    public class ExerciseDetailPagerAdapter : Android.Support.V4.App.FragmentPagerAdapter
+    public class ExerciseDetailPagerAdapter : FragmentPagerAdapter, IViewPagerAdapter
     {
 
-        private int _LogId;
+        int _LogId;
+        List<Android.Support.V4.App.Fragment> _fragments;
+
+
         public ExerciseDetailPagerAdapter(FragmentManager fm, int logId) : base(fm)
         {
             _LogId = logId;
 
-
+            _fragments = new List<Fragment>();
+            _fragments.Add(AddLogFragment.Instance(_LogId));
+            _fragments.Add(ExerciseDetailPBFragment.Instance(_LogId));
+            _fragments.Add(ExerciseDetailHistoryFragment.Instance(_LogId));
+            _fragments.Add(ExerciseDetailReportsFragment.Instance(_LogId));
         }
 
         public override int Count
         {
             get
             {
-                return 4;
+                return _fragments.Count;
             }
         }
 
+        //public override Fragment GetItem(int position)
+        //{
+        //    switch (position)
+        //    {
+        //        case 0: return AddLogFragment.Instance(_LogId);
+        //        case 1: return ExerciseDetailPBFragment.Instance(_LogId);
+        //        case 2: return ExerciseDetailHistoryFragment.Instance(_LogId);
+        //        case 3: return ExerciseDetailReportsFragment.Instance(_LogId);
+        //    }
+
+        //    return null;
+        //}
+
         public override Fragment GetItem(int position)
         {
-            switch (position)
-            {
-                case 0: return AddLogFragment.Instance(_LogId);
-                case 1: return ExerciseDetailPBFragment.Instance(_LogId);
-                case 2: return ExerciseDetailHistoryFragment.Instance(_LogId);
-                case 3: return ExerciseDetailReportsFragment.Instance(_LogId);
-            }
+            return _fragments[position];
 
-            return null;
+        }
+
+        public string GetTitle(int position)
+        {
+            return ((IViewPagerFragment)_fragments[position]).Title;
         }
     }
    

@@ -33,6 +33,7 @@ namespace GymLog.Activities
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
+            //set tool bar
             _toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(_toolbar);
             this.SupportActionBar.Title = "Gym Log Home";
@@ -40,12 +41,12 @@ namespace GymLog.Activities
             //setup sliding tabs
             _slidingTabScrollView = FindViewById<SlidingTabScrollView>(Resource.Id.sliding_tabs);
             _viewPager = FindViewById<ViewPager>(Resource.Id.viewPager);
-            _viewPager.Adapter = new SlidingTabsAdapter(new List<string>() { "Today's Exercises", "History" });
+            _viewPager.Adapter = new HomePagerAdapter(base.SupportFragmentManager);
+           // _viewPager.Adapter = new SlidingTabsAdapter(new List<string>() { "Today's Exercises", "History" });
             _slidingTabScrollView.ViewPage = _viewPager;
 
-            //add page viewer
-            _viewPager = FindViewById<ViewPager>(Resource.Id.viewPager);
-            _viewPager.Adapter = new HomePagerAdapter(base.SupportFragmentManager);
+           
+           
            
 
         }

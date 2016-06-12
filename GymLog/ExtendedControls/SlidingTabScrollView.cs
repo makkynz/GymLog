@@ -12,6 +12,7 @@ using Android.Widget;
 using Android.Support.V4.View;
 using Android.Util;
 using GymLog.Adapters;
+using GymLog.Interfaces;
 
 namespace GymLog.ExtendedControls
 {
@@ -157,7 +158,7 @@ namespace GymLog.ExtendedControls
             for(int i = 0; i < adapter.Count; i++)
             {
                 TextView tabView = CreateDefaultTabView(Context);
-                tabView.Text = ((SlidingTabsAdapter)adapter).GetHeaderTitle(i);
+                tabView.Text = ((IViewPagerAdapter)adapter).GetTitle(i);
                 tabView.SetTextColor(Android.Graphics.Color.Black);
                 tabView.Tag = i;
                 tabView.Click += TabView_Click;

@@ -19,14 +19,23 @@ using Android.Support.V7.Widget;
 using Newtonsoft.Json;
 using GymLog.Shared.Manager;
 using Android.Support.Design.Widget;
+using GymLog.Interfaces;
 
 namespace GymLog.Fragments
 {
-    public class AddLogFragment : Fragment
+    public class AddLogFragment : Fragment, IViewPagerFragment
     {
 
         ExerciseLog _log;
         AddLogListAdapter _addLogListAdapter;
+
+        public string Title
+        {
+            get
+            {
+                return "Today's Log";
+            }
+        }
 
         public static AddLogFragment Instance(int LogId)
         {

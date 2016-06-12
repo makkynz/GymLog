@@ -18,14 +18,22 @@ using GymLog.Shared.Models;
 using Android.Support.V7.Widget;
 using Newtonsoft.Json;
 using GymLog.Shared.Manager;
+using GymLog.Interfaces;
 
 namespace GymLog.Fragments
 {
-    public class ExerciseDetailPBFragment : Fragment
+    public class ExerciseDetailPBFragment : Fragment, IViewPagerFragment
     {
 
-        ExerciseLog _log;      
-        
+        ExerciseLog _log;
+
+        public string Title
+        {
+            get
+            {
+                return "PB";
+            }
+        }
 
         public static ExerciseDetailPBFragment Instance(int LogId)
         {

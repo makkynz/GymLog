@@ -92,6 +92,8 @@
     <Compile Include="Fragments\HistoryFragment.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="GymLoggApp.cs" />
+    <Compile Include="Interfaces\IViewPagerFragment.cs" />
+    <Compile Include="Interfaces\IViewPagerAdapter.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Fragments\TodayFragment.cs" />

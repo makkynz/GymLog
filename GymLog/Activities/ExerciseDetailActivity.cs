@@ -42,12 +42,10 @@ namespace GymLog.Activities
             //setup sliding tabs
             _slidingTabScrollView = FindViewById<SlidingTabScrollView>(Resource.Id.sliding_tabs);
             _viewPager = FindViewById<ViewPager>(Resource.Id.viewPager);
-            _viewPager.Adapter = new SlidingTabsAdapter(new List<string>() { "Log", "PB", "History", "Reports" });
+            //_viewPager.Adapter = new SlidingTabsAdapter(new List<string>() { "Log", "PB", "History", "Reports" });
+            _viewPager.Adapter = new ExerciseDetailPagerAdapter(base.SupportFragmentManager, _Log.Id.Value);
             _slidingTabScrollView.ViewPage = _viewPager;
 
-            //add page viewer
-            var viewPage = FindViewById<ViewPager>(Resource.Id.viewPager);
-            viewPage.Adapter = new ExerciseDetailPagerAdapter(base.SupportFragmentManager, _Log.Id.Value);
            
 
         }

@@ -18,14 +18,22 @@ using GymLog.Shared.Models;
 using Android.Support.V7.Widget;
 using Newtonsoft.Json;
 using GymLog.Shared.Manager;
+using GymLog.Interfaces;
 
 namespace GymLog.Fragments
 {
-    public class ExerciseDetailHistoryFragment : Fragment
+    public class ExerciseDetailHistoryFragment : Fragment, IViewPagerFragment
     {
 
-        ExerciseLog _log;      
-        
+        ExerciseLog _log;
+
+        public string Title
+        {
+            get
+            {
+                return "Exercise History";
+            }
+        }
 
         public static ExerciseDetailHistoryFragment Instance(int LogId)
         {

@@ -16,12 +16,19 @@ using lm = GymLog.Shared.Manager.LogManager;
 using GymLog.Adapters;
 using Android.Support.Design.Widget;
 using Newtonsoft.Json;
+using GymLog.Interfaces;
 
 namespace GymLog.Fragments
 {
-    public class TodayFragment : Fragment
+    public class TodayFragment : Fragment, IViewPagerFragment
     {
-        
+        public string Title
+        {
+            get
+            {
+                return "Today";
+            }
+        }
 
         public override void OnCreate(Bundle savedInstanceState)
         {

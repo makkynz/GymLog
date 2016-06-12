@@ -14,12 +14,20 @@ using Android.Support.V4.View;
 using Android.Support.V4.App;
 using lm = GymLog.Shared.Manager.LogManager;
 using GymLog.Adapters;
+using GymLog.Interfaces;
 
 namespace GymLog.Fragments
 {
-    public class HistoryFragment : Fragment
+    public class HistoryFragment : Fragment, IViewPagerFragment
     {
-        
+        public string Title
+        {
+            get
+            {
+               return "History";
+            }
+        }
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);            
