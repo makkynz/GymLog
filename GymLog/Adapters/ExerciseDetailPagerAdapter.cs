@@ -21,7 +21,7 @@ namespace GymLog.Adapters
             _LogId = logId;
 
             _fragments = new List<Fragment>();
-            _fragments.Add(AddLogFragment.Instance(_LogId));
+            _fragments.Add(ExerciseDetailAddLogFragment.Instance(_LogId));
             _fragments.Add(ExerciseDetailPBFragment.Instance(_LogId));
             _fragments.Add(ExerciseDetailHistoryFragment.Instance(_LogId));
             _fragments.Add(ExerciseDetailReportsFragment.Instance(_LogId));

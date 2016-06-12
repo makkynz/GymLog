@@ -25,7 +25,7 @@ namespace GymLog.Fragments
 
         List<ExerciseLog> _logs;
         RecyclerView.LayoutManager _layoutManager;
-        LogAdapter _adapter;
+        LogListAdapter _adapter;
         RecyclerView _recyclerView;
         
 
@@ -46,7 +46,7 @@ namespace GymLog.Fragments
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            var view = inflater.Inflate(Resource.Layout.LogList, container, false);
+            var view = inflater.Inflate(Resource.Layout.fragment_exercise_detail_log, container, false);
             _logs = JsonConvert.DeserializeObject<List<ExerciseLog>>(Arguments.GetString("logs"));
             _recyclerView = view.FindViewById<RecyclerView>(Resource.Id.recyclerLogs);
            
@@ -54,7 +54,7 @@ namespace GymLog.Fragments
             _layoutManager = new LinearLayoutManager(this.Context);
             _recyclerView.SetLayoutManager(_layoutManager);
 
-            _adapter = new LogAdapter(base.Activity, _logs);
+            _adapter = new LogListAdapter(base.Activity, _logs);
             _recyclerView.SetAdapter(_adapter);
 
             _adapter.RowClick += _adapter_RowClick;

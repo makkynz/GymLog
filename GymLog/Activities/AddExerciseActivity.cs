@@ -24,7 +24,7 @@ namespace GymLog.Activities
         Android.Support.V7.Widget.Toolbar _toolbar;
         List<Exercise> _exercises;
         RecyclerView.LayoutManager _layoutManager;
-        ExerciseListAdapter _adapter;
+        AddExerciseListAdapter _adapter;
         RecyclerView _recyclerView;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -32,7 +32,7 @@ namespace GymLog.Activities
             base.OnCreate(savedInstanceState);
 
             // Create your application here            
-            SetContentView(Resource.Layout.ExerciseList);
+            SetContentView(Resource.Layout.activity_add_exercise_list);
 
             //set toolbar
             _toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);           
@@ -45,7 +45,7 @@ namespace GymLog.Activities
             _recyclerView = FindViewById<RecyclerView>(Resource.Id.recyclerExercises);
             _layoutManager = new LinearLayoutManager(this);
             _recyclerView.SetLayoutManager(_layoutManager);
-            _adapter = new ExerciseListAdapter(this, _exercises);
+            _adapter = new AddExerciseListAdapter(this, _exercises);
             _adapter.ItemAddClick += exercise_AddClick;
             _recyclerView.SetAdapter(_adapter);
 
@@ -57,7 +57,7 @@ namespace GymLog.Activities
             {
                 case Resource.Id.action_back:
                     Toast.MakeText(this, "Going back", ToastLength.Short).Show();
-                    StartActivity(new Intent(this, typeof(Activities.MainActivity)));
+                    StartActivity(new Intent(this, typeof(Activities.HomeActivity)));
                     Finish(); break;
             }
             return true;
@@ -82,7 +82,7 @@ namespace GymLog.Activities
             };
             newLog.Save();
             Toast.MakeText(this, _exercises[position].Name + " has been added", ToastLength.Short).Show();            
-            StartActivity(new Intent(this, typeof(Activities.MainActivity)));
+            StartActivity(new Intent(this, typeof(Activities.HomeActivity)));
             Finish(); 
         }
     }

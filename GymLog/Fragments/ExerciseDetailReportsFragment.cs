@@ -52,7 +52,7 @@ namespace GymLog.Fragments
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            var view = inflater.Inflate(Resource.Layout.ExerciseDetail_Reports, container, false);
+            var view = inflater.Inflate(Resource.Layout.fragment_exercise_detail_reports, container, false);
             _log = LogManager.GetLogById(Arguments.GetInt("LogId"));
            
             // Use this to return your custom view for this Fragment

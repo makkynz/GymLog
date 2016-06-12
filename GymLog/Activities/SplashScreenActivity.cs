@@ -37,7 +37,7 @@ namespace GymLog.Activities
 
             startupWork.ContinueWith(t => {
                 Log.Debug(TAG, "Work is finished - start Activity1.");
-                StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+                StartActivity(new Intent(Application.Context, typeof(HomeActivity)));
             }, TaskScheduler.FromCurrentSynchronizationContext());
 
             startupWork.Start();

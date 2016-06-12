@@ -33,7 +33,7 @@ namespace GymLog.Activities
             _Log = LogManager.GetLogById(Intent.GetIntExtra("LogId", 0));
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.ExerciseDetailActivity);
+            SetContentView(Resource.Layout.activity_exercise_detail_activity);
 
             _toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(_toolbar);
@@ -65,7 +65,7 @@ namespace GymLog.Activities
             {
                 case Resource.Id.action_back:
                     Toast.MakeText(this, "Going back", ToastLength.Short).Show();
-                    StartActivity(new Intent(this, typeof(Activities.MainActivity)));
+                    StartActivity(new Intent(this, typeof(Activities.HomeActivity)));
                     Finish(); break;
             }
             return true;

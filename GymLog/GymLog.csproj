@@ -75,10 +75,10 @@
   <ItemGroup>
     <Compile Include="Activities\ExerciseDetailActivity.cs" />
     <Compile Include="Activities\SplashScreenActivity.cs" />
-    <Compile Include="Adapters\ExerciseListAdapter.cs" />
+    <Compile Include="Adapters\AddExerciseListAdapter.cs" />
     <Compile Include="Adapters\ExerciseDetailPagerAdapter.cs" />
     <Compile Include="Adapters\AddLogListAdapter.cs" />
-    <Compile Include="Adapters\LogAdapter.cs" />
+    <Compile Include="Adapters\LogListAdapter.cs" />
     <Compile Include="Adapters\HomePagerAdapter.cs" />
     <Compile Include="Activities\AddExerciseActivity.cs" />
     <Compile Include="Adapters\SlidingTabsAdapter.cs" />
@@ -87,10 +87,10 @@
     <Compile Include="Fragments\ExerciseDetailReportsFragment.cs" />
     <Compile Include="Fragments\ExerciseDetailHistoryFragment.cs" />
     <Compile Include="Fragments\ExerciseDetailPBFragment.cs" />
-    <Compile Include="Fragments\AddLogFragment.cs" />
+    <Compile Include="Fragments\ExerciseDetailAddLogFragment.cs" />
     <Compile Include="Fragments\LogListFragment.cs" />
     <Compile Include="Fragments\HistoryFragment.cs" />
-    <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="Activities\HomeActivity.cs" />
     <Compile Include="GymLoggApp.cs" />
     <Compile Include="Interfaces\IViewPagerFragment.cs" />
     <Compile Include="Interfaces\IViewPagerAdapter.cs" />
@@ -102,50 +102,49 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\TodayFragement.axml">
+    <AndroidResource Include="Resources\layout\fragment_home_today.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\LogRow.axml">
+    <AndroidResource Include="Resources\layout\fragment_exercise_detail_log.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\HistoryFragement.axml">
+    <AndroidResource Include="Resources\layout\row_exercise_detail_log.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\AddExerciseActivity.axml" />
-    <AndroidResource Include="Resources\layout\LogList.axml">
+    <AndroidResource Include="Resources\layout\fragment_home_history.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\list_item_bg.xml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ExerciseRow.axml">
+    <AndroidResource Include="Resources\layout\row_add_exercise.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ExerciseList.axml">
+    <AndroidResource Include="Resources\layout\activity_add_exercise_list.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\splash_screen.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ExerciseDetailActivity.axml" />
-    <AndroidResource Include="Resources\layout\AddLog.axml">
+    <AndroidResource Include="Resources\layout\activity_exercise_detail_activity.axml" />
+    <AndroidResource Include="Resources\layout\fragment_add_log.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ExerciseDetail_PB.axml">
+    <AndroidResource Include="Resources\layout\fragment_exercise_detail_pb.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ExerciseDetail_History.axml">
+    <AndroidResource Include="Resources\layout\fragment_exercise_detail_history.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ExerciseDetail_Reports.axml">
+    <AndroidResource Include="Resources\layout\fragment_exercise_detail_reports.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\AddLogRow.axml">
+    <AndroidResource Include="Resources\layout\row_add_log.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout\activity_home.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\gymlog.db" />

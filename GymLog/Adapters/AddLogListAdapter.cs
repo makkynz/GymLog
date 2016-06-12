@@ -53,7 +53,7 @@ namespace GymLog.Adapters
         {
             var set = _sets[position];
 
-            var row = (convertView ?? LayoutInflater.FromContext(_context).Inflate( Resource.Layout.AddLogRow, parent,  false));
+            var row = (convertView ?? LayoutInflater.FromContext(_context).Inflate( Resource.Layout.row_add_log, parent,  false));
 
             var lblSetNbr = row.FindViewById<TextView>(Resource.Id.lblSetNbr);
             var txtStatOne = row.FindViewById<EditText>(Resource.Id.txtStatOne);
