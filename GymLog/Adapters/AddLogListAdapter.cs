@@ -97,7 +97,18 @@ namespace GymLog.Adapters
                     set.StatOne = Convert.ToDouble(txtStatOne.Text);
                     set.Save();
                 }
+
+               
             };
+
+            //txtStatOne.KeyPress += (s, e) =>
+            //{
+            //    if(e.KeyCode == Keycode.Enter)
+            //    {
+            //        txtStatTwo.RequestFocus();
+            //    }
+            //};
+            
             txtStatTwo.TextChanged += (s, e) =>
             {
                 if (!String.IsNullOrWhiteSpace(txtStatTwo.Text))
