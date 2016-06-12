@@ -17,7 +17,7 @@ namespace GymLog.Activities
     [Activity( MainLauncher = false,  
         Theme = "@style/MyTheme",
         ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize
-      ,LaunchMode = Android.Content.PM.LaunchMode.SingleTop
+      ,LaunchMode = Android.Content.PM.LaunchMode.SingleInstance
         )]
     public class MainActivity : AppCompatActivity
     {
@@ -41,12 +41,6 @@ namespace GymLog.Activities
             //setup sliding tabs
             _slidingTabScrollView = FindViewById<SlidingTabScrollView>(Resource.Id.sliding_tabs);
             _viewPager = FindViewById<ViewPager>(Resource.Id.viewPager);
-            _viewPager.Adapter = new HomePagerAdapter(base.SupportFragmentManager);
-           // _viewPager.Adapter = new SlidingTabsAdapter(new List<string>() { "Today's Exercises", "History" });
-            _slidingTabScrollView.ViewPage = _viewPager;
-
-           
-           
            
 
         }
@@ -58,6 +52,13 @@ namespace GymLog.Activities
             return base.OnCreateOptionsMenu(menu);
         }
 
+        protected override void OnResume()
+        {
+            _viewPager.Adapter = new HomePagerAdapter(base.SupportFragmentManager);
+            _slidingTabScrollView.ViewPage = _viewPager;
+
+            base.OnResume();
+        }
 
 
     }

@@ -13,7 +13,7 @@
       </intent-filter>
     </activity>
     <activity android:configChanges="orientation|screenSize" android:label="AddExercise" android:theme="@style/MyTheme" android:name="md5fe439492bfa6be88e6b31b9b10d06a23.AddExerciseActivity" />
-    <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:theme="@style/MyTheme" android:name="md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity" />
+    <activity android:configChanges="orientation|screenSize" android:launchMode="singleInstance" android:theme="@style/MyTheme" android:name="md5fe439492bfa6be88e6b31b9b10d06a23.MainActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="GymLog.GymLog.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

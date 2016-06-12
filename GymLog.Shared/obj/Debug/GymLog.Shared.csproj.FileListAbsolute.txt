@@ -89,3 +89,9 @@ C:\work\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.dll.mdb
 C:\work\GymLog\GymLog.Shared\bin\Debug\GymLog.Shared.dll.mdb
 C:\work\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.dll.mdb
 C:\work\GymLog\GymLog.Shared\bin\Debug\GymLog.Shared.dll.mdb
+C:\work\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.dll.mdb
+C:\work\GymLog\GymLog.Shared\bin\Debug\GymLog.Shared.dll.mdb
+C:\work\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.dll.mdb
+C:\work\GymLog\GymLog.Shared\bin\Debug\GymLog.Shared.dll.mdb
+C:\work\GymLog\GymLog.Shared\obj\Debug\GymLog.Shared.dll.mdb
+C:\work\GymLog\GymLog.Shared\bin\Debug\GymLog.Shared.dll.mdb

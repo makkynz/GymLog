@@ -34,19 +34,7 @@ namespace GymLog.Adapters
                 return _fragments.Count;
             }
         }
-
-        //public override Fragment GetItem(int position)
-        //{
-        //    switch (position)
-        //    {
-        //        case 0: return AddLogFragment.Instance(_LogId);
-        //        case 1: return ExerciseDetailPBFragment.Instance(_LogId);
-        //        case 2: return ExerciseDetailHistoryFragment.Instance(_LogId);
-        //        case 3: return ExerciseDetailReportsFragment.Instance(_LogId);
-        //    }
-
-        //    return null;
-        //}
+        
 
         public override Fragment GetItem(int position)
         {
