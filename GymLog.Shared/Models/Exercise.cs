@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using GymLog.Shared.Manager;
+using Newtonsoft.Json;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -13,40 +14,37 @@ namespace GymLog.Shared.Models
         [PrimaryKey, AutoIncrement]
         public int? Id { get; set; }
         public string Name { get; set; }
-        public List<Enums.ExerciseMetricsEnum> Metrics
-        {
-            get
-            {
-                //TODO:  finish this
-                return new List<Enums.ExerciseMetricsEnum>() { Enums.ExerciseMetricsEnum.Weight, Enums.ExerciseMetricsEnum.Reps };
-            }
-        }
         public string Photo { get; set; }
+        public string Metric { get; set; }
         public string Description { get; set; }
         public string KeyStat { get { return "1 Rep Max: 70Kg"; } }
 
-          
+
+      
         public List<string> MetricDisplayNames
         {
             get
             {
                 var result = new List<string>();
-                foreach(Enums.ExerciseMetricsEnum metric in Metrics)
+               
+                switch (ExerciseManager.GetMetricByName(Metric))
                 {
-                    switch (metric)
-                    {
-                        case Enums.ExerciseMetricsEnum.Weight:
-                            result.Add("kg"); break;
-
-                        case Enums.ExerciseMetricsEnum.Reps:
-                            result.Add("reps" ); break;
-
-                        case Enums.ExerciseMetricsEnum.Time:
-                            result.Add("time"); break;
-                         
-
-                    }                    
-                }
+                    case Enums.ExerciseMetricsEnum.Distance:
+                        result.Add("mtr"); break;
+                    case Enums.ExerciseMetricsEnum.Time:
+                        result.Add("time"); break;
+                    case Enums.ExerciseMetricsEnum.Weight:
+                        result.Add("kg"); break;
+                    case Enums.ExerciseMetricsEnum.Reps:
+                        result.Add("reps" ); break;
+                    case Enums.ExerciseMetricsEnum.WeightAndReps:
+                        result.Add("kg"); result.Add("reps"); break;
+                    case Enums.ExerciseMetricsEnum.WeightAndTime:
+                        result.Add("kg"); result.Add("time"); break;
+                    case Enums.ExerciseMetricsEnum.TimeAndDistance:
+                        result.Add("mtrs"); result.Add("time"); break;
+                }                    
+                
 
                 return result;
             }

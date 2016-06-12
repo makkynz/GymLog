@@ -73,15 +73,14 @@ namespace GymLog.Activities
         private void exercise_AddClick(object sender, int position)
         {
             //save new log
-            var newLog = new ExerciseLog
+            if (LogManager.AddExerciseForToday(_exercises[position]))
             {
-                DateCreated = DateTime.Now,
-                Exercise = _exercises[position]
-                
-
-            };
-            newLog.Save();
-            Toast.MakeText(this, _exercises[position].Name + " has been added", ToastLength.Short).Show();            
+                Toast.MakeText(this, _exercises[position].Name + " has been added", ToastLength.Short).Show();
+            }else
+            {
+                Toast.MakeText(this, _exercises[position].Name + " already in list", ToastLength.Short).Show();
+            }
+                  
             StartActivity(new Intent(this, typeof(Activities.HomeActivity)));
             Finish(); 
         }

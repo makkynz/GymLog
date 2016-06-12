@@ -12,6 +12,8 @@ using Android.Widget;
 using GymLog.Shared.Models;
 using Android.Support.V7.Widget;
 using GymLog.Shared.Helpers;
+using Android.Support.Design.Widget;
+
 namespace GymLog.Adapters
 {
     public class AddLogListAdapter : BaseAdapter<ExerciseSet>
@@ -20,7 +22,7 @@ namespace GymLog.Adapters
         Activity _context = null;
         List<ExerciseSet> _sets = new List<ExerciseSet>();
 
-        public event EventHandler AddNewSetClick;
+        public event EventHandler<int> RemoveSetClick;
 
         public AddLogListAdapter(Activity context, List<ExerciseSet> sets) : base()
         {
@@ -60,9 +62,21 @@ namespace GymLog.Adapters
             var lblStatOne = row.FindViewById<TextView>(Resource.Id.lblStatOne);
             var txtStatTwo = row.FindViewById<EditText>(Resource.Id.txtStatTwo);
             var lblStatTwo = row.FindViewById<TextView>(Resource.Id.lblStatTwo);
-           
+            var btnRemove = row.FindViewById<FloatingActionButton>(Resource.Id.btnRemove);
+
+
+            btnRemove.Click += (s, e) =>
+            {
+                if (RemoveSetClick != null){
+                    RemoveSetClick(this, position);
+                }
+            };
 
             lblSetNbr.Text = (position + 1).ToString();
+
+
+            /*build input controls */
+                
 
             //set metric hints
             var statCount = 0;
@@ -97,17 +111,8 @@ namespace GymLog.Adapters
                     set.StatOne = Convert.ToDouble(txtStatOne.Text);
                     set.Save();
                 }
-
                
-            };
-
-            //txtStatOne.KeyPress += (s, e) =>
-            //{
-            //    if(e.KeyCode == Keycode.Enter)
-            //    {
-            //        txtStatTwo.RequestFocus();
-            //    }
-            //};
+            };        
             
             txtStatTwo.TextChanged += (s, e) =>
             {
@@ -122,6 +127,8 @@ namespace GymLog.Adapters
             //Finally return the view
             return row;
         }
+
+         
 
 
        

@@ -2269,20 +2269,21 @@ containing a value of this type.
         public static final int ic_action_reply=0x7f02004e;
         public static final int ic_action_undo=0x7f02004f;
         public static final int ic_plus=0x7f020050;
-        public static final int icon=0x7f020051;
-        public static final int list_item_bg=0x7f020052;
-        public static final int mask_frame=0x7f020053;
-        public static final int notification_template_icon_bg=0x7f020058;
-        public static final int orange_plus=0x7f020054;
-        public static final int pulldown=0x7f020055;
-        public static final int rounded_corner=0x7f020056;
-        public static final int splash_screen=0x7f020057;
+        public static final int ic_remove=0x7f020051;
+        public static final int icon=0x7f020052;
+        public static final int list_item_bg=0x7f020053;
+        public static final int mask_frame=0x7f020054;
+        public static final int notification_template_icon_bg=0x7f020059;
+        public static final int orange_plus=0x7f020055;
+        public static final int pulldown=0x7f020056;
+        public static final int rounded_corner=0x7f020057;
+        public static final int splash_screen=0x7f020058;
     }
     public static final class id {
-        public static final int LogRowName=0x7f060096;
-        public static final int LogRowSets=0x7f060097;
+        public static final int LogRowName=0x7f060097;
+        public static final int LogRowSets=0x7f060098;
         public static final int action0=0x7f06007d;
-        public static final int action_back=0x7f060098;
+        public static final int action_back=0x7f060099;
         public static final int action_bar=0x7f06005a;
         public static final int action_bar_activity_content=0x7f060001;
         public static final int action_bar_container=0x7f060059;
@@ -2303,6 +2304,7 @@ containing a value of this type.
         public static final int beginning=0x7f06001b;
         public static final int bottom=0x7f06002a;
         public static final int btnAdd=0x7f06008f;
+        public static final int btnRemove=0x7f060095;
         public static final int buttonPanel=0x7f060044;
         public static final int cancel_action=0x7f06007e;
         public static final int center=0x7f06002b;
@@ -2378,7 +2380,7 @@ containing a value of this type.
         public static final int recyclerExercises=0x7f06006b;
         public static final int recyclerLogs=0x7f06007b;
         public static final int right=0x7f060030;
-        public static final int rowLog=0x7f060095;
+        public static final int rowLog=0x7f060096;
         public static final int screen=0x7f060017;
         public static final int scroll=0x7f060026;
         public static final int scrollIndicatorDown=0x7f06004e;

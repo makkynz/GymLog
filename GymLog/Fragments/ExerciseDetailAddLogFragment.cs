@@ -64,7 +64,16 @@ namespace GymLog.Fragments
            _addLogListAdapter = new AddLogListAdapter(base.Activity, _log.Sets);          
             listViewLogs.Adapter = _addLogListAdapter;
 
-            
+            /*remove set button click */
+            _addLogListAdapter.RemoveSetClick += (s, position) => {
+                if(_log.Sets.Count > position)
+                {
+                    _log.DeleteSet(position);
+                    _addLogListAdapter.NotifyDataSetChanged();
+                }
+                
+            };
+
             /*bind Plus button*/
             var fab = view.FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += (sender, args) =>

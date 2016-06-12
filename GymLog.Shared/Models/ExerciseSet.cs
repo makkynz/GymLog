@@ -61,5 +61,15 @@ namespace GymLog.Shared.Models
             }
         }
 
+        public void Delete()
+        {
+            if (this.Id.HasValue)
+            {
+                var db = DataManager.DB;
+                db.Delete(this);
+                db.Commit();
+            }
+        }
+
     }
 }

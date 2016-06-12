@@ -42,6 +42,13 @@ namespace GymLog.Shared.Manager
             return result;
         }
 
+        public static Enums.ExerciseMetricsEnum GetMetricByName(string name)
+        {
+            var result = (Enums.ExerciseMetricsEnum)System.Enum.Parse(typeof(Enums.ExerciseMetricsEnum), name);
+            return result;
+            
+        }
+
 
         
     }

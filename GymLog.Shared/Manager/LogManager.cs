@@ -47,6 +47,23 @@ namespace GymLog.Shared.Manager
             return result;
         }
 
+        public static bool AddExerciseForToday(Exercise exercise)
+        {
+            if(!LogsToday.Any(l=>l.ExerciseId == exercise.Id))
+            {
+                var newLog = new ExerciseLog
+                {
+                    DateCreated = DateTime.Now,
+                    Exercise = exercise
+                };
+                newLog.Save();
+                return true;
+            }else
+            {
+                return false;
+            }
+        }
+
        
 
     }

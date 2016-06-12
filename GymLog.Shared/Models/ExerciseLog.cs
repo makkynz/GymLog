@@ -74,6 +74,15 @@ namespace GymLog.Shared.Models
             
         }
 
+        public void DeleteSet(int index)
+        {
+            if(this.Sets.Count > index)
+            {
+                this.Sets[index].Delete();
+                this.Sets.RemoveAt(index);
+            }
+        }
+
         public void AddNewSet()
         {
             this.Sets.Add(new ExerciseSet(this.Id.Value));
