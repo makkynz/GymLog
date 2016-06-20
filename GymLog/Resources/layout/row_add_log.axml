@@ -4,14 +4,14 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="60dp"
-    android:gravity="center"
-    android:paddingLeft="0dp"
-    android:paddingRight="0dp">
+    android:gravity="fill_horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
     <TextView
         android:text="1"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:id="@+id/lblSetNbr"
         android:layout_gravity="center_vertical"
         android:textSize="20dp"
@@ -19,66 +19,79 @@
         android:gravity="center_horizontal|center_vertical"
         android:textColor="#ffffff"
         android:layout_marginLeft="5dp" />
-    <EditText
-        android:inputType="phone"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtStatOne"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:textSize="30dp"
-        android:layout_marginLeft="10dp"
-        android:layout_weight="0"
-        android:gravity="right"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="center_horizontal"
+        android:id="@+id/layoutMiddle"
+        android:layout_weight="1">
+        <EditText
+            android:inputType="phone"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtStatOne"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:digits="1234567890"
+            android:text="23"
+            android:maxLength="3"
+            android:imeOptions="actionNext"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            android:layout_marginRight="0.0dp"
+            android:minWidth="60dp" />
+        <TextView
+            android:text="kg"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblStatOne"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textSize="30dp"
+            android:textColor="#cccccc" />
+        <EditText
+            android:inputType="phone"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtStatTwo"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:digits="1234567890"
+            android:numeric="decimal"
+            android:text="6"
+            android:maxLength="3"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            android:minWidth="60dp" />
+        <TextView
+            android:text="reps"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblStatTwo"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textSize="30dp"
+            android:textColor="#cccccc" />
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:digits="1234567890"
-        android:text="23"
-        android:maxLength="3"
-        android:imeOptions="actionNext"
-        android:background="@android:color/transparent"
-        android:paddingRight="10dp"
-        android:layout_marginRight="0.0dp"
-        android:minWidth="60dp" />
-    <TextView
-        android:text="kg"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/lblStatOne"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:textSize="30dp"
-        android:textColor="#cccccc" />
-    <EditText
-        android:inputType="phone"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtStatTwo"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:textSize="30dp"
-        android:layout_marginLeft="10dp"
-        android:gravity="right"
-        android:layout_width="wrap_content"
-        android:digits="1234567890"
-        android:numeric="decimal"
-        android:text="6"
-        android:maxLength="3"
-        android:background="@android:color/transparent"
-        android:paddingRight="10dp"
-        android:minWidth="60dp" />
-    <TextView
-        android:text="reps"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/lblStatTwo"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:textSize="30dp"
-        android:textColor="#cccccc" />
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/btnRemove"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:layout_centerVertical="true"
-        android:src="@drawable/ic_remove"
-        app:backgroundTint="#fe6363"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp" />
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="right">
+        <ImageButton
+            android:src="@drawable/dots_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnMenu"
+            android:background="@null"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:backgroundTint="#b4b4b4ff" />
+    </LinearLayout>
 </LinearLayout>

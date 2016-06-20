@@ -17,6 +17,7 @@ using GymLog.Adapters;
 using GymLog.Shared.Models;
 using Android.Support.V7.Widget;
 using Newtonsoft.Json;
+using GymLog.Shared.Constants;
 
 namespace GymLog.Fragments
 {
@@ -68,9 +69,9 @@ namespace GymLog.Fragments
         private void _adapter_RowClick(object sender, int position)
         {
             var intent = new Intent(base.Activity, typeof(Activities.ExerciseDetailActivity));
-            intent.PutExtra("LogId", _logs[position].Id.Value);
+            intent.PutExtra(ParamKeys.EXERCISE_ID, _logs[position].Exercise.Id.Value);
             StartActivity(intent);
-
+            base.Activity.Finish();
         }
     }
 }

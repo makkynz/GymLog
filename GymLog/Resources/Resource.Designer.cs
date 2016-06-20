@@ -1810,40 +1810,43 @@ namespace GymLog
 			public const int design_snackbar_background = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int ic_action_reply = 2130837582;
+			public const int dots_vertical = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int ic_action_undo = 2130837583;
+			public const int ic_action_reply = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int ic_plus = 2130837584;
+			public const int ic_action_undo = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int ic_remove = 2130837585;
+			public const int ic_plus = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int Icon = 2130837586;
+			public const int ic_remove = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int list_item_bg = 2130837587;
+			public const int Icon = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int mask_frame = 2130837588;
-			
-			// aapt resource value: 0x7f020059
-			public const int notification_template_icon_bg = 2130837593;
+			public const int list_item_bg = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int orange_plus = 2130837589;
+			public const int mask_frame = 2130837589;
+			
+			// aapt resource value: 0x7f02005a
+			public const int notification_template_icon_bg = 2130837594;
 			
 			// aapt resource value: 0x7f020056
-			public const int pulldown = 2130837590;
+			public const int orange_plus = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int rounded_corner = 2130837591;
+			public const int pulldown = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int splash_screen = 2130837592;
+			public const int rounded_corner = 2130837592;
+			
+			// aapt resource value: 0x7f020059
+			public const int splash_screen = 2130837593;
 			
 			static Drawable()
 			{
@@ -1858,17 +1861,17 @@ namespace GymLog
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060097
-			public const int LogRowName = 2131099799;
-			
 			// aapt resource value: 0x7f060098
-			public const int LogRowSets = 2131099800;
+			public const int LogRowName = 2131099800;
+			
+			// aapt resource value: 0x7f060099
+			public const int LogRowSets = 2131099801;
 			
 			// aapt resource value: 0x7f06007d
 			public const int action0 = 2131099773;
 			
-			// aapt resource value: 0x7f060099
-			public const int action_back = 2131099801;
+			// aapt resource value: 0x7f06009a
+			public const int action_back = 2131099802;
 			
 			// aapt resource value: 0x7f06005a
 			public const int action_bar = 2131099738;
@@ -1930,8 +1933,11 @@ namespace GymLog
 			// aapt resource value: 0x7f06008f
 			public const int btnAdd = 2131099791;
 			
-			// aapt resource value: 0x7f060095
-			public const int btnRemove = 2131099797;
+			// aapt resource value: 0x7f06009b
+			public const int btnDelete = 2131099803;
+			
+			// aapt resource value: 0x7f060096
+			public const int btnMenu = 2131099798;
 			
 			// aapt resource value: 0x7f060044
 			public const int buttonPanel = 2131099716;
@@ -2065,17 +2071,20 @@ namespace GymLog
 			// aapt resource value: 0x7f06008e
 			public const int keyStat = 2131099790;
 			
+			// aapt resource value: 0x7f060091
+			public const int layoutMiddle = 2131099793;
+			
 			// aapt resource value: 0x7f06008c
 			public const int layoutText = 2131099788;
 			
 			// aapt resource value: 0x7f060090
 			public const int lblSetNbr = 2131099792;
 			
-			// aapt resource value: 0x7f060092
-			public const int lblStatOne = 2131099794;
+			// aapt resource value: 0x7f060093
+			public const int lblStatOne = 2131099795;
 			
-			// aapt resource value: 0x7f060094
-			public const int lblStatTwo = 2131099796;
+			// aapt resource value: 0x7f060095
+			public const int lblStatTwo = 2131099797;
 			
 			// aapt resource value: 0x7f06002f
 			public const int left = 2131099695;
@@ -2158,8 +2167,8 @@ namespace GymLog
 			// aapt resource value: 0x7f060030
 			public const int right = 2131099696;
 			
-			// aapt resource value: 0x7f060096
-			public const int rowLog = 2131099798;
+			// aapt resource value: 0x7f060097
+			public const int rowLog = 2131099799;
 			
 			// aapt resource value: 0x7f060017
 			public const int screen = 2131099671;
@@ -2296,11 +2305,11 @@ namespace GymLog
 			// aapt resource value: 0x7f06006e
 			public const int touch_outside = 2131099758;
 			
-			// aapt resource value: 0x7f060091
-			public const int txtStatOne = 2131099793;
+			// aapt resource value: 0x7f060092
+			public const int txtStatOne = 2131099794;
 			
-			// aapt resource value: 0x7f060093
-			public const int txtStatTwo = 2131099795;
+			// aapt resource value: 0x7f060094
+			public const int txtStatTwo = 2131099796;
 			
 			// aapt resource value: 0x7f060009
 			public const int up = 2131099657;
@@ -2568,6 +2577,9 @@ namespace GymLog
 			
 			// aapt resource value: 0x7f0c0000
 			public const int action_menu = 2131492864;
+			
+			// aapt resource value: 0x7f0c0001
+			public const int menu_add_set = 2131492865;
 			
 			static Menu()
 			{

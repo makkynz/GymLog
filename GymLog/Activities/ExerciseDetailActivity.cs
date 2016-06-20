@@ -13,6 +13,7 @@ using GymLog.ExtendedControls;
 using System.Collections.Generic;
 using GymLog.Shared.Manager;
 using GymLog.Shared.Models;
+using GymLog.Shared.Constants;
 
 namespace GymLog.Activities
 {
@@ -23,27 +24,27 @@ namespace GymLog.Activities
         Android.Support.V7.Widget.Toolbar _toolbar;
         SlidingTabScrollView _slidingTabScrollView;
         ViewPager _viewPager;       
-        ExerciseLog _Log;
+        Exercise _exercise;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
             //get args
-            _Log = LogManager.GetLogById(Intent.GetIntExtra("LogId", 0));
+            _exercise = ExerciseManager.GetExerciseById(Intent.GetIntExtra(ParamKeys.EXERCISE_ID, 0));
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_exercise_detail_activity);
 
             _toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(_toolbar);
-            this.SupportActionBar.Title = _Log.Exercise.Name; //get name of exercise
+            this.SupportActionBar.Title = _exercise.Name; //get name of exercise
 
             //setup sliding tabs
             _slidingTabScrollView = FindViewById<SlidingTabScrollView>(Resource.Id.sliding_tabs);
             _viewPager = FindViewById<ViewPager>(Resource.Id.viewPager);
             //_viewPager.Adapter = new SlidingTabsAdapter(new List<string>() { "Log", "PB", "History", "Reports" });
-            _viewPager.Adapter = new ExerciseDetailPagerAdapter(base.SupportFragmentManager, _Log.Id.Value);
+            _viewPager.Adapter = new ExerciseDetailPagerAdapter(base.SupportFragmentManager, _exercise.Id.Value);
             _slidingTabScrollView.ViewPage = _viewPager;
 
            

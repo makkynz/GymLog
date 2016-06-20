@@ -15,6 +15,7 @@ using GymLog.Adapters;
 using Newtonsoft.Json;
 using GymLog.Shared.Manager;
 using Android.Support.V7.App;
+using GymLog.Shared.Constants;
 
 namespace GymLog.Activities
 {
@@ -80,8 +81,10 @@ namespace GymLog.Activities
             {
                 Toast.MakeText(this, _exercises[position].Name + " already in list", ToastLength.Short).Show();
             }
-                  
-            StartActivity(new Intent(this, typeof(Activities.HomeActivity)));
+
+            var intent = new Intent(this, typeof(Activities.ExerciseDetailActivity));
+            intent.PutExtra(ParamKeys.EXERCISE_ID, _exercises[position].Id.Value);
+            StartActivity(intent);           
             Finish(); 
         }
     }

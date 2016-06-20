@@ -83,9 +83,31 @@ namespace GymLog.Shared.Models
             }
         }
 
+        public void AddNewSetIfEmpty()
+        {
+            if (this.Sets.Count == 0) AddNewSet();
+        }
+
         public void AddNewSet()
         {
-            this.Sets.Add(new ExerciseSet(this.Id.Value));
+            var newSet = new ExerciseSet(this.Id.Value);
+
+            if (LastSet!=null)
+            {
+                newSet.StatOne = LastSet.StatOne;
+                newSet.StatTwo = LastSet.StatTwo;
+                newSet.Save();
+            }
+            
+            this.Sets.Add(newSet);
+        }
+
+        public ExerciseSet LastSet
+        {
+            get
+            {
+                return Sets.Count > 0 ? Sets[Sets.Count - 1] : null;
+            }
         }
 
     }

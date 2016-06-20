@@ -12,19 +12,19 @@ namespace GymLog.Adapters
     public class ExerciseDetailPagerAdapter : FragmentPagerAdapter, IViewPagerAdapter
     {
 
-        int _LogId;
+        int _ExerciseId;
         List<Android.Support.V4.App.Fragment> _fragments;
 
 
-        public ExerciseDetailPagerAdapter(FragmentManager fm, int logId) : base(fm)
+        public ExerciseDetailPagerAdapter(FragmentManager fm, int exerciseId) : base(fm)
         {
-            _LogId = logId;
+            _ExerciseId = exerciseId;
 
             _fragments = new List<Fragment>();
-            _fragments.Add(ExerciseDetailAddLogFragment.Instance(_LogId));
-            _fragments.Add(ExerciseDetailPBFragment.Instance(_LogId));
-            _fragments.Add(ExerciseDetailHistoryFragment.Instance(_LogId));
-            _fragments.Add(ExerciseDetailReportsFragment.Instance(_LogId));
+            _fragments.Add(ExerciseDetailAddLogFragment.Instance(_ExerciseId));
+            _fragments.Add(ExerciseDetailPBFragment.Instance(_ExerciseId));
+            _fragments.Add(ExerciseDetailHistoryFragment.Instance(_ExerciseId));
+            _fragments.Add(ExerciseDetailReportsFragment.Instance(_ExerciseId));
         }
 
         public override int Count

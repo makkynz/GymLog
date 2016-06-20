@@ -67,6 +67,8 @@ C:\work\GymLog\GymLog\obj\Debug\res\drawable\rounded_corner.xml
 C:\work\GymLog\GymLog\obj\Debug\res\drawable\ic_remove.png
 C:\work\GymLog\GymLog\obj\Debug\R.cs.flag
 C:\work\GymLog\GymLog\obj\Debug\uploadflags.txt
+C:\work\GymLog\GymLog\obj\Debug\res\menu\menu_add_set.xml
+C:\work\GymLog\GymLog\obj\Debug\res\drawable\dots_vertical.xml
 C:\work\GymLog\GymLog\bin\Debug\GymLog.Shared.dll.mdb
 C:\work\GymLog\GymLog\obj\Debug\GymLog.dll.mdb
 C:\work\GymLog\GymLog\bin\Debug\GymLog.dll.mdb

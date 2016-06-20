@@ -49,5 +49,15 @@ namespace GymLog.Shared.Models
                 return result;
             }
         }
+
+        public ExerciseLog TodaysLog
+        {
+            get
+            {
+                return LogManager.LogsToday.Where(l => l.ExerciseId == this.Id).SingleOrDefault();
+            }
+        }
+
+        
     }
 }

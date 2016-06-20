@@ -16,7 +16,7 @@ using Android.Support.Design.Widget;
 
 namespace GymLog.Adapters
 {
-    public class AddLogListAdapter : BaseAdapter<ExerciseSet>
+    public class AddSetAdapter : BaseAdapter<ExerciseSet>
     {
 
         Activity _context = null;
@@ -24,7 +24,7 @@ namespace GymLog.Adapters
 
         public event EventHandler<int> RemoveSetClick;
 
-        public AddLogListAdapter(Activity context, List<ExerciseSet> sets) : base()
+        public AddSetAdapter(Activity context, List<ExerciseSet> sets) : base()
         {
             _context = context;
             _sets = sets;
@@ -53,6 +53,8 @@ namespace GymLog.Adapters
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
+            if (convertView != null && convertView is View) return convertView;
+
             var set = _sets[position];
 
             var row = (convertView ?? LayoutInflater.FromContext(_context).Inflate( Resource.Layout.row_add_log, parent,  false));
@@ -62,14 +64,25 @@ namespace GymLog.Adapters
             var lblStatOne = row.FindViewById<TextView>(Resource.Id.lblStatOne);
             var txtStatTwo = row.FindViewById<EditText>(Resource.Id.txtStatTwo);
             var lblStatTwo = row.FindViewById<TextView>(Resource.Id.lblStatTwo);
-            var btnRemove = row.FindViewById<FloatingActionButton>(Resource.Id.btnRemove);
+            var btnMenu = row.FindViewById<ImageButton>(Resource.Id.btnMenu);
 
 
-            btnRemove.Click += (s, e) =>
+            btnMenu.Click += (s, e) =>
             {
-                if (RemoveSetClick != null){
-                    RemoveSetClick(this, position);
-                }
+                var menu = new Android.Widget.PopupMenu(this._context, btnMenu);
+
+                
+                menu.Inflate(Resource.Menu.menu_add_set);
+
+                menu.MenuItemClick += (s1, arg1) => {
+                    if (RemoveSetClick != null){
+                       RemoveSetClick(this, position);
+                    }
+                };             
+
+                menu.Show();
+
+               
             };
 
             lblSetNbr.Text = (position + 1).ToString();

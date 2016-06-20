@@ -20,14 +20,15 @@ using Newtonsoft.Json;
 using GymLog.Shared.Manager;
 using Android.Support.Design.Widget;
 using GymLog.Interfaces;
+using GymLog.Shared.Constants;
 
 namespace GymLog.Fragments
 {
     public class ExerciseDetailAddLogFragment : Fragment, IViewPagerFragment
     {
 
-        ExerciseLog _log;
-        AddLogListAdapter _addLogListAdapter;
+        Exercise _exercise;
+        AddSetAdapter _addLogListAdapter;
 
         public string Title
         {
@@ -37,12 +38,12 @@ namespace GymLog.Fragments
             }
         }
 
-        public static ExerciseDetailAddLogFragment Instance(int LogId)
+        public static ExerciseDetailAddLogFragment Instance(int ExerciseId)
         {
             var frag = new ExerciseDetailAddLogFragment();
 
             frag.Arguments = new Bundle();
-            frag.Arguments.PutInt("LogId", LogId);           
+            frag.Arguments.PutInt("ExerciseId", ExerciseId);           
 
             return frag;
         }
@@ -55,30 +56,40 @@ namespace GymLog.Fragments
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             var view = inflater.Inflate(Resource.Layout.fragment_add_log, container, false);
-            _log = LogManager.GetLogById(Arguments.GetInt("LogId"));
+            _exercise = ExerciseManager.GetExerciseById(Arguments.GetInt(ParamKeys.EXERCISE_ID));
+            var log = _exercise.TodaysLog;
 
+            if (log != null)
+            {
 
-            /*bind log list*/
-            var listViewLogs = view.FindViewById<ListView>(Resource.Id.listViewLogs);
-            if (_log.Sets.Count == 0) _log.AddNewSet();
-           _addLogListAdapter = new AddLogListAdapter(base.Activity, _log.Sets);          
-            listViewLogs.Adapter = _addLogListAdapter;
+                /*bind log list*/
+                var listViewLogs = view.FindViewById<ListView>(Resource.Id.listViewLogs);
+                log.AddNewSetIfEmpty();
+                _addLogListAdapter = new AddSetAdapter(base.Activity, log.Sets);
+                listViewLogs.Adapter = _addLogListAdapter;
 
-            /*remove set button click */
-            _addLogListAdapter.RemoveSetClick += (s, position) => {
-                if(_log.Sets.Count > position)
+                /*remove set button click */
+                _addLogListAdapter.RemoveSetClick += (s, position) =>
                 {
-                    _log.DeleteSet(position);
-                    _addLogListAdapter.NotifyDataSetChanged();
-                }
-                
-            };
+                    if (log.Sets.Count > position)
+                    {
+                        log.DeleteSet(position);
+                        _addLogListAdapter.NotifyDataSetChanged();
+                    }
+
+                };
+            }
 
             /*bind Plus button*/
             var fab = view.FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += (sender, args) =>
             {
-                _log.AddNewSet();
+                if(log == null)
+                {
+                    LogManager.AddExerciseForToday(_exercise);
+                    log = _exercise.TodaysLog;
+                }
+                log.AddNewSet();
                 _addLogListAdapter.NotifyDataSetChanged();
             };
 

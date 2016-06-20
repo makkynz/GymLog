@@ -59,7 +59,7 @@ namespace GymLog.Fragments
             {
                 var intent = new Intent(base.Activity, typeof(Activities.AddExerciseActivity));
                 StartActivity(intent);
-               
+                base.Activity.Finish();
             };
 
         }
