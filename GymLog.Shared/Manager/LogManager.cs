@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GymLog.Shared.Models;
 using em = GymLog.Shared.Manager.ExerciseManager;
+using date = GymLog.Shared.Helpers.DateHelper;
 
 namespace GymLog.Shared.Manager
 {
@@ -14,12 +15,8 @@ namespace GymLog.Shared.Manager
         {
             get
             {
-                var startOfDayTicks = DateTime.Now.Date.Ticks;
-                var endOfDayTicks = DateTime.Now.Date.AddDays(1).AddTicks(-1).Ticks;
-                var test = DataManager.DB.Query<ExerciseLog>("SELECT * FROM ExerciseLog ");
-                var logs = DataManager.DB.Query<ExerciseLog>("SELECT * FROM ExerciseLog WHERE DateCreated BETWEEN ? AND ?", startOfDayTicks, endOfDayTicks);
-
-             
+                        
+                var logs = DataManager.DB.Query<ExerciseLog>("SELECT * FROM ExerciseLog WHERE DateCreated BETWEEN ? AND ?", date.StartOfDayTicks, date.EndOfDayTicks);
                 return logs;
             }
         }
@@ -28,14 +25,12 @@ namespace GymLog.Shared.Manager
         {
             get
             {
-                var startOfDayTicks = DateTime.Now.Date.Ticks;                
-
-                var logs = DataManager.DB.Query<ExerciseLog>("SELECT * FROM ExerciseLog WHERE DateCreated < ? ", startOfDayTicks);
-
-               
+                var logs = DataManager.DB.Query<ExerciseLog>("SELECT * FROM ExerciseLog WHERE DateCreated < ? ", date.StartOfDayTicks);               
                 return logs;
             }
         }
+
+        
 
 
         public static ExerciseLog GetLogById(int id)

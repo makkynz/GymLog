@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants\Params.cs" />
+    <Compile Include="Helpers\DateHelper.cs" />
     <Compile Include="Helpers\StringHelper.cs" />
     <Compile Include="Manager\DataManager.cs" />
     <Compile Include="Manager\ExerciseManager.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="Enums\ExerciseEnum.cs" />
     <Compile Include="Models\ExerciseSet.cs" />
     <Compile Include="Models\ExerciseLog.cs" />
+    <Compile Include="Models\ExerciseSetInput.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

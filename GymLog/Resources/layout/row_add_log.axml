@@ -27,7 +27,7 @@
         android:id="@+id/layoutMiddle"
         android:layout_weight="1">
         <EditText
-            android:inputType="phone"
+            android:inputType="numberDecimal"
             android:layout_height="wrap_content"
             android:id="@+id/txtStatOne"
             android:layout_gravity="center_vertical|center_horizontal"
@@ -36,7 +36,7 @@
             android:layout_weight="0"
             android:gravity="right"
             android:layout_width="wrap_content"
-            android:digits="1234567890"
+            android:digits="1234567890.:"
             android:text="23"
             android:maxLength="3"
             android:imeOptions="actionNext"
@@ -54,7 +54,7 @@
             android:textSize="30dp"
             android:textColor="#cccccc" />
         <EditText
-            android:inputType="phone"
+            android:inputType="numberDecimal"
             android:layout_height="wrap_content"
             android:id="@+id/txtStatTwo"
             android:layout_gravity="center_vertical|center_horizontal"
@@ -62,7 +62,7 @@
             android:layout_marginLeft="10dp"
             android:gravity="right"
             android:layout_width="wrap_content"
-            android:digits="1234567890"
+            android:digits="1234567890.:"
             android:numeric="decimal"
             android:text="6"
             android:maxLength="3"

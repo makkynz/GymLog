@@ -53,6 +53,35 @@ namespace GymLog.Shared.Models
             }
         }
 
+        /// <summary>
+        /// I format the set for display in a list in the UI
+        /// </summary>
+        public string FormatSetsForDisplay
+        {
+            get
+            {
+                var str = new StringBuilder();
+
+                foreach (var set in Sets)
+                {
+                    if (str.Length != 0) str.Append("\n");
+
+                    var setStat = new StringBuilder();
+                    foreach (var input in set.Inputs)
+                    {
+                        if (setStat.Length != 0) setStat.Append(" | ");
+                        setStat.Append(input.DisplayString);
+                    }
+
+                    str.Append(setStat.ToString());
+
+
+                }
+
+                return str.ToString();
+            }
+        }
+
         [Ignore]
         [JsonIgnore]
         public int SetCount

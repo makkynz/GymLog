@@ -19,36 +19,10 @@ namespace GymLog.Shared.Models
         public string Description { get; set; }
         public string KeyStat { get { return "1 Rep Max: 70Kg"; } }
 
-
+             
       
-        public List<string> MetricDisplayNames
-        {
-            get
-            {
-                var result = new List<string>();
-               
-                switch (ExerciseManager.GetMetricByName(Metric))
-                {
-                    case Enums.ExerciseMetricsEnum.Distance:
-                        result.Add("mtr"); break;
-                    case Enums.ExerciseMetricsEnum.Time:
-                        result.Add("time"); break;
-                    case Enums.ExerciseMetricsEnum.Weight:
-                        result.Add("kg"); break;
-                    case Enums.ExerciseMetricsEnum.Reps:
-                        result.Add("reps" ); break;
-                    case Enums.ExerciseMetricsEnum.WeightAndReps:
-                        result.Add("kg"); result.Add("reps"); break;
-                    case Enums.ExerciseMetricsEnum.WeightAndTime:
-                        result.Add("kg"); result.Add("time"); break;
-                    case Enums.ExerciseMetricsEnum.TimeAndDistance:
-                        result.Add("mtrs"); result.Add("time"); break;
-                }                    
-                
 
-                return result;
-            }
-        }
+        
 
         public ExerciseLog TodaysLog
         {
@@ -58,6 +32,15 @@ namespace GymLog.Shared.Models
             }
         }
 
+
+        public List<ExerciseLog> Logs
+        {
+            get
+            {
+                var logs = DataManager.DB.Query<ExerciseLog>("SELECT * FROM ExerciseLog WHERE ExerciseId = ? ORDER BY DateCreated DESC", this.Id.Value);
+                return logs;
+            }
+        }
         
     }
 }

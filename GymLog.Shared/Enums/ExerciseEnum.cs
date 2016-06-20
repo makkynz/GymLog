@@ -12,5 +12,11 @@
 
     }
 
-   
+    public enum SetInputTypes
+    {
+        Number,
+        Decimal,
+        Time       
+
+    }
 }

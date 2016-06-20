@@ -19,13 +19,15 @@ using Android.Support.V7.Widget;
 using Newtonsoft.Json;
 using GymLog.Shared.Manager;
 using GymLog.Interfaces;
+using GymLog.Shared.Constants;
 
 namespace GymLog.Fragments
 {
     public class ExerciseDetailHistoryFragment : Fragment, IViewPagerFragment
     {
 
-        ExerciseLog _log;
+        Exercise _exercise;
+        ExerciseHistoryListAdapter _addLogListAdapter;
 
         public string Title
         {
@@ -35,12 +37,12 @@ namespace GymLog.Fragments
             }
         }
 
-        public static ExerciseDetailHistoryFragment Instance(int LogId)
+        public static ExerciseDetailHistoryFragment Instance(int ExerciseId)
         {
             var frag = new ExerciseDetailHistoryFragment();
 
             frag.Arguments = new Bundle();
-            frag.Arguments.PutInt("LogId", LogId);           
+            frag.Arguments.PutInt("ExerciseId", ExerciseId);
 
             return frag;
         }
@@ -52,9 +54,23 @@ namespace GymLog.Fragments
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            var view = inflater.Inflate(Resource.Layout.fragment_exercise_detail_history, container, false);
-            _log = LogManager.GetLogById(Arguments.GetInt("LogId"));
-           
+            var view = inflater.Inflate(Resource.Layout.fragment_set_history, container, false);
+            _exercise = ExerciseManager.GetExerciseById(Arguments.GetInt(ParamKeys.EXERCISE_ID));
+
+
+            var log = _exercise.Logs;
+
+            if (log != null)
+            {
+
+                /*bind log list*/
+                var listViewLogs = view.FindViewById<ListView>(Resource.Id.listViewLogs);
+               
+                _addLogListAdapter = new ExerciseHistoryListAdapter(base.Activity, log);
+                listViewLogs.Adapter = _addLogListAdapter;
+              
+            }
+
             // Use this to return your custom view for this Fragment
             return view;
 

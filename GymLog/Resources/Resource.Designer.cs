@@ -1870,8 +1870,8 @@ namespace GymLog
 			// aapt resource value: 0x7f06007d
 			public const int action0 = 2131099773;
 			
-			// aapt resource value: 0x7f06009a
-			public const int action_back = 2131099802;
+			// aapt resource value: 0x7f06009e
+			public const int action_back = 2131099806;
 			
 			// aapt resource value: 0x7f06005a
 			public const int action_bar = 2131099738;
@@ -1933,8 +1933,8 @@ namespace GymLog
 			// aapt resource value: 0x7f06008f
 			public const int btnAdd = 2131099791;
 			
-			// aapt resource value: 0x7f06009b
-			public const int btnDelete = 2131099803;
+			// aapt resource value: 0x7f06009f
+			public const int btnDelete = 2131099807;
 			
 			// aapt resource value: 0x7f060096
 			public const int btnMenu = 2131099798;
@@ -2074,11 +2074,23 @@ namespace GymLog
 			// aapt resource value: 0x7f060091
 			public const int layoutMiddle = 2131099793;
 			
+			// aapt resource value: 0x7f06009c
+			public const int layoutSets = 2131099804;
+			
 			// aapt resource value: 0x7f06008c
 			public const int layoutText = 2131099788;
 			
+			// aapt resource value: 0x7f06009b
+			public const int lblDate = 2131099803;
+			
+			// aapt resource value: 0x7f06009a
+			public const int lblDayOfWeek = 2131099802;
+			
 			// aapt resource value: 0x7f060090
 			public const int lblSetNbr = 2131099792;
+			
+			// aapt resource value: 0x7f06009d
+			public const int lblSets = 2131099805;
 			
 			// aapt resource value: 0x7f060093
 			public const int lblStatOne = 2131099795;
@@ -2518,49 +2530,55 @@ namespace GymLog
 			public const int fragment_home_today = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int notification_media_action = 2130903087;
+			public const int fragment_set_history = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int notification_media_cancel_action = 2130903088;
+			public const int notification_media_action = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int notification_template_big_media = 2130903089;
+			public const int notification_media_cancel_action = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int notification_template_big_media_narrow = 2130903090;
+			public const int notification_template_big_media = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int notification_template_lines = 2130903091;
+			public const int notification_template_big_media_narrow = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int notification_template_media = 2130903092;
+			public const int notification_template_lines = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int notification_template_part_chronometer = 2130903093;
+			public const int notification_template_media = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int notification_template_part_time = 2130903094;
+			public const int notification_template_part_chronometer = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int row_add_exercise = 2130903095;
+			public const int notification_template_part_time = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int row_add_log = 2130903096;
+			public const int row_add_exercise = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int row_exercise_detail_log = 2130903097;
+			public const int row_add_log = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int select_dialog_item_material = 2130903098;
+			public const int row_exercise_detail_log = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int select_dialog_multichoice_material = 2130903099;
+			public const int row_set_history = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int select_dialog_singlechoice_material = 2130903100;
+			public const int select_dialog_item_material = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int support_simple_spinner_dropdown_item = 2130903101;
+			public const int select_dialog_multichoice_material = 2130903101;
+			
+			// aapt resource value: 0x7f03003e
+			public const int select_dialog_singlechoice_material = 2130903102;
+			
+			// aapt resource value: 0x7f03003f
+			public const int support_simple_spinner_dropdown_item = 2130903103;
 			
 			static Layout()
 			{

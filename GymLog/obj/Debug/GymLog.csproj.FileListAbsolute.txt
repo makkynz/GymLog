@@ -19,6 +19,7 @@ C:\work\GymLog\GymLog\GymLog\obj\Debug\res\layout\listview_exercise_row.xml
 C:\work\GymLog\GymLog\GymLog\obj\Debug\res\layout\historyfragement.xml
 C:\work\GymLog\GymLog\GymLog\obj\Debug\GymLog.dll.mdb
 C:\work\GymLog\GymLog\GymLog\bin\Debug\GymLog.dll.mdb
+C:\work\GymLog\GymLog\obj\Debug\GymLog.csprojResolveAssemblyReference.cache
 C:\work\GymLog\GymLog\bin\Debug\GymLog.dll
 C:\work\GymLog\GymLog\bin\Debug\GymLog.pdb
 C:\work\GymLog\GymLog\bin\Debug\GymLog.GymLog.apk
@@ -33,7 +34,6 @@ C:\work\GymLog\GymLog\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
 C:\work\GymLog\GymLog\bin\Debug\SQLite-net.dll
 C:\work\GymLog\GymLog\bin\Debug\GymLog.Shared.pdb
 C:\work\GymLog\GymLog\bin\Debug\Newtonsoft.Json.xml
-C:\work\GymLog\GymLog\obj\Debug\GymLog.csprojResolveAssemblyReference.cache
 C:\work\GymLog\GymLog\obj\Debug\GymLog.dll
 C:\work\GymLog\GymLog\obj\Debug\GymLog.pdb
 C:\work\GymLog\GymLog\obj\Debug\android\bin\GymLog.GymLog.apk
@@ -51,6 +51,7 @@ C:\work\GymLog\GymLog\obj\Debug\res\layout\fragment_exercise_detail_pb.xml
 C:\work\GymLog\GymLog\obj\Debug\res\layout\fragment_exercise_detail_history.xml
 C:\work\GymLog\GymLog\obj\Debug\res\layout\fragment_exercise_detail_reports.xml
 C:\work\GymLog\GymLog\obj\Debug\res\layout\row_add_log.xml
+C:\work\GymLog\GymLog\obj\Debug\res\layout\row_set_history.xml
 C:\work\GymLog\GymLog\obj\Debug\res\layout\activity_home.xml
 C:\work\GymLog\GymLog\obj\Debug\res\values\strings.xml
 C:\work\GymLog\GymLog\obj\Debug\res\drawable\icon.png
@@ -65,10 +66,11 @@ C:\work\GymLog\GymLog\obj\Debug\res\drawable\app_icon.png
 C:\work\GymLog\GymLog\obj\Debug\res\drawable\orange_plus.png
 C:\work\GymLog\GymLog\obj\Debug\res\drawable\rounded_corner.xml
 C:\work\GymLog\GymLog\obj\Debug\res\drawable\ic_remove.png
-C:\work\GymLog\GymLog\obj\Debug\R.cs.flag
-C:\work\GymLog\GymLog\obj\Debug\uploadflags.txt
 C:\work\GymLog\GymLog\obj\Debug\res\menu\menu_add_set.xml
 C:\work\GymLog\GymLog\obj\Debug\res\drawable\dots_vertical.xml
+C:\work\GymLog\GymLog\obj\Debug\R.cs.flag
+C:\work\GymLog\GymLog\obj\Debug\uploadflags.txt
+C:\work\GymLog\GymLog\obj\Debug\res\layout\fragment_set_history.xml
 C:\work\GymLog\GymLog\bin\Debug\GymLog.Shared.dll.mdb
 C:\work\GymLog\GymLog\obj\Debug\GymLog.dll.mdb
 C:\work\GymLog\GymLog\bin\Debug\GymLog.dll.mdb

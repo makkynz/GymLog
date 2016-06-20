@@ -46,8 +46,46 @@ namespace GymLog.Shared.Models
                 ExerciseLogId = value.Id.Value;
                 _ExerciseLog = value;
             }
-        }       
-        
+        }
+
+        public List<ExerciseSetInput> Inputs
+        {
+            get
+            {
+                var result = new List<ExerciseSetInput>();
+
+                switch (ExerciseManager.GetMetricByName(this.ExerciseLog.Exercise.Metric))
+                {
+                    case Enums.ExerciseMetricsEnum.Distance:
+                        result.Add( new ExerciseSetInput { InputType = Enums.SetInputTypes.Decimal, Label = "mtr", Value = StatOne } ); break;
+                    case Enums.ExerciseMetricsEnum.Time:
+                        result.Add(new ExerciseSetInput { InputType = Enums.SetInputTypes.Time, Label = "mins", Value = StatOne }); break;
+                       
+                    case Enums.ExerciseMetricsEnum.Weight:
+                        result.Add(new ExerciseSetInput { InputType = Enums.SetInputTypes.Decimal, Label = "kg", Value = StatOne }); break;
+                        
+                    case Enums.ExerciseMetricsEnum.Reps:
+                        result.Add(new ExerciseSetInput { InputType = Enums.SetInputTypes.Number, Label = "reps", Value = StatOne }); break;
+                       
+                    case Enums.ExerciseMetricsEnum.WeightAndReps:
+                        result.Add(new ExerciseSetInput { InputType = Enums.SetInputTypes.Decimal, Label = "kg", Value = StatOne });
+                        result.Add(new ExerciseSetInput { InputType = Enums.SetInputTypes.Number, Label = "reps", Value = StatTwo });
+                        break;
+                       
+                    case Enums.ExerciseMetricsEnum.WeightAndTime:
+                        result.Add(new ExerciseSetInput { InputType = Enums.SetInputTypes.Decimal, Label = "kg", Value = StatOne });
+                        result.Add(new ExerciseSetInput { InputType = Enums.SetInputTypes.Time, Label = "mins", Value = StatTwo });
+                        break;
+                    case Enums.ExerciseMetricsEnum.TimeAndDistance:
+                        result.Add(new ExerciseSetInput { InputType = Enums.SetInputTypes.Decimal, Label = "mtr", Value = StatOne });
+                        result.Add(new ExerciseSetInput { InputType = Enums.SetInputTypes.Time, Label = "mins", Value = StatTwo });
+                        break;
+                }
+
+                return result;
+            }
+        }
+
 
         private ExerciseLog _ExerciseLog;
         

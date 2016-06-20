@@ -34,7 +34,7 @@ namespace GymLog.Fragments
         {
             get
             {
-                return "Today's Log";
+                return "Today's Sets";
             }
         }
 
@@ -61,6 +61,10 @@ namespace GymLog.Fragments
 
             if (log != null)
             {
+                LogManager.AddExerciseForToday(_exercise);
+                log = _exercise.TodaysLog;
+            }
+            
 
                 /*bind log list*/
                 var listViewLogs = view.FindViewById<ListView>(Resource.Id.listViewLogs);
@@ -78,17 +82,13 @@ namespace GymLog.Fragments
                     }
 
                 };
-            }
+            
 
             /*bind Plus button*/
             var fab = view.FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += (sender, args) =>
             {
-                if(log == null)
-                {
-                    LogManager.AddExerciseForToday(_exercise);
-                    log = _exercise.TodaysLog;
-                }
+               
                 log.AddNewSet();
                 _addLogListAdapter.NotifyDataSetChanged();
             };
@@ -97,5 +97,10 @@ namespace GymLog.Fragments
 
 
         }        
+
+        public void BindLogs()
+        {
+
+        }
     }
 }
